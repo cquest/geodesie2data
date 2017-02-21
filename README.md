@@ -26,3 +26,38 @@ La sortie est en json.
 
 ### Mise en forme du json final
 C'est à nouveau **jq** qui est utilisé pour remettre chaque fichier json dans un unique json global.
+
+## Exemple
+```
+  {
+    "commune": "BENONCES",
+    "departement": "AIN (01)",
+    "ld": "CALVAIRE DE PORTES",
+    "nom": "BENONCES I",
+    "numero": "03701",
+    "reperes": [
+      {
+        "alti": 1073.973,
+        "description": "Borne 1946 en granit gravée IGN : Repère hémisphérique 1994, en laiton de 12 mm de diamètre",
+        "gps": "ok",
+        "id": "183 - NO : 0103701-01",
+        "indice": "a",
+        "lat": 45.857334847222226,
+        "lon": 5.491579569444444,
+        "nivellement": "R'.B.P3 - 108-II",
+        "precision_plani_max": "1 cm",
+        "vu": "2012"
+      },
+      {
+        "alti": 1067.645,
+        "description": "Regard en béton : Repère hémisphérique 1994 en laiton de 12, mm de diamètre",
+        "gps": "ok",
+        "id": "184 - NO : 0103701-02",
+        "indice": "b",
+        "lat": 45.858032550000004,
+        "lon": 5.491103238888889,
+        "nivellement": "R'.B.P3 - 108-I",
+        "precision_plani_max": "5 cm",
+        "vu": "2012"
+      },
+      
