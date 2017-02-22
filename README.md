@@ -1,7 +1,7 @@
 # geodesie2data
 **Scripts d'extractions des données des repères géodésiques de l'IGN**
 
-Le but de ces scripts est d'extraire des fiches de géodésie (uniquement disponibles sous forme de fichier PDF) des données facilement réutilisables dans un format ouvert.
+Le but de ces scripts est d'extraire des fiches de géodésie (uniquement disponibles sous forme de fichier PDF) des données *"dans un standard ouvert, aisément réutilisable et exploitable par un système de traitement automatisé"*.
 
 L'IGN a par ailleurs confirmé que ces données étaient sous **Licence Ouverte**. Si vous les réutilisez n'oublier pas d'indiquer "source IGN/geodesie.ign.fr" ainsi que la date d'extraction.
 
