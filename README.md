@@ -7,7 +7,7 @@ Afin d'éviter que chacun ne refasse des milliers de téléchargements et d'anal
 - fichier pour le [Réseau de Base](https://github.com/cquest/geodesie2data/raw/master/rbf-all.json) (un peu plus de 1100 bornes)
 - fichier pour le Réseau de Détail (plus de 64000 bornes, à venir, dès vérification que l'extraction est correcte pour le Réseau de Base)
 
-L'IGN a par ailleurs confirmé que ces données étaient sous **Licence Ouverte**. Si vous les réutilisez n'oublier pas d'indiquer "source IGN/geodesie.ign.fr" ainsi que la date d'extraction car ce sont des données qui évoluent avec le temps.
+L'IGN a par ailleurs confirmé que ces données étaient sous [**Licence Ouverte**](https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf). Si vous les réutilisez n'oublier pas d'indiquer "source IGN/geodesie.ign.fr" ainsi que la date d'extraction car ce sont des données qui évoluent avec le temps.
 
 ## Dépendances
 
