@@ -3,11 +3,11 @@
 
 Le but de ces scripts est d'extraire des fiches de géodésie (uniquement disponibles sous forme de fichier PDF) des données *"dans un standard ouvert, aisément réutilisable et exploitable par un système de traitement automatisé"*.
 
-L'IGN a par ailleurs confirmé que ces données étaient sous **Licence Ouverte**. Si vous les réutilisez n'oublier pas d'indiquer "source IGN/geodesie.ign.fr" ainsi que la date d'extraction.
-
 Afin d'éviter que chacun ne refasse des milliers de téléchargements et d'analyses de fichiers PDF, **les données déjà extraites sont disponible en json :**
 - fichier pour le [Réseau de Base](https://github.com/cquest/geodesie2data/raw/master/rbf-all.json) (un peu plus de 1100 bornes)
 - fichier pour le Réseau de Détail (plus de 64000 bornes, à venir, dès vérification que l'extraction est correcte pour le Réseau de Base)
+
+L'IGN a par ailleurs confirmé que ces données étaient sous **Licence Ouverte**. Si vous les réutilisez n'oublier pas d'indiquer "source IGN/geodesie.ign.fr" ainsi que la date d'extraction car ce sont des données qui évoluent avec le temps.
 
 ## Dépendances
 
