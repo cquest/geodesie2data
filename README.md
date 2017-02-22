@@ -5,6 +5,10 @@ Le but de ces scripts est d'extraire des fiches de géodésie (uniquement dispon
 
 L'IGN a par ailleurs confirmé que ces données étaient sous **Licence Ouverte**. Si vous les réutilisez n'oublier pas d'indiquer "source IGN/geodesie.ign.fr" ainsi que la date d'extraction.
 
+**Les données déjà extraites sont disponible en json :**
+- fichier pour le [Réseau de Base](https://github.com/cquest/geodesie2data/raw/master/rbf-all.json) (un peu plus de 1100 bornes)
+- fichier pour le Réseau de Détail (plus de 64000 bornes, à venir, dès vérification que l'extraction est correcte pour le Réseau de Base)
+
 ## Dépendances
 
 Pour installer les dépendances (sur GNU/Linux):
