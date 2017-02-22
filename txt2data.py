@@ -4,8 +4,8 @@ import re
 
 state = 0
 d = {'reperes':[]} # données du site
-re_lonlat = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *(\-[0-9\.]*)$")
-re_lat = re.compile(r"^ *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *(\-[0-9\.]*)$")
+re_lonlat = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
+re_lat = re.compile(r"^ *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
 re_lon = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO])$")
 
 f = open(sys.argv[1])
