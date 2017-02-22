@@ -41502,30 +41502,47 @@
     "numero": "10608",
     "reperes": [
       {
+        "alti": -10.75,
         "description": "Phare : Axe et sommet",
         "id": "75 - NO : 9710608-03",
         "indice": "b",
+        "lat": 16.090025527777776,
+        "lon": -61.77143061111111,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -12.75,
         "description": "Phare : Repère en bronze PM scellé 1991",
         "gps": "ok",
         "id": "76 - NO : 9710608-04",
         "indice": "c",
+        "lat": 16.090028083333333,
+        "lon": -61.771428888888885,
+        "precision_plani_max": "10 cm",
         "vu": "2009"
       },
       {
+        "alti": -17.43,
         "description": "Borne IGN 1991 : Repère laiton 12 mm à tête hémisphérique",
         "gps": "ok",
         "id": "2099 - NO : 9710608-05",
         "indice": "d",
+        "lat": 16.09002869444444,
+        "lon": -61.77125752777778,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -10.45,
         "description": "Rocher : Repère laiton 18 mm à tête hémisphérique 2008",
         "gps": "ok",
         "id": "2105 - NO : 9710608-06",
         "indice": "e",
+        "lat": 16.09046236111111,
+        "lon": -61.77082991666666,
+        "precision_alti_max": "10 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       }
     ],
@@ -41572,21 +41589,24 @@
         "vu": "2008"
       },
       {
-        "alti": 0.66,
+        "alti": -36.72,
         "description": "Socle circulaire en béton : Repère en laiton GM 2008",
         "gps": "ok",
         "id": "2106 - NO : 9710713-06",
         "indice": "e",
-        "lat": 16.04640175,
-        "lon": -61.57213063888889,
+        "lat": 16.042448,
+        "lon": -61.56401533333333,
         "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": 0.66,
         "description": "Borne IGN 1991 : Repère en laiton à tête hémisphérique 2008",
         "gps": "ok",
         "id": "2107 - NO : 9710713-07",
         "indice": "f",
+        "lat": 16.04640175,
+        "lon": -61.57213063888889,
         "precision_alti_max": "5 cm",
         "precision_plani_max": "10 cm",
         "vu": "2008"
@@ -41772,30 +41792,47 @@
     "numero": "11005",
     "reperes": [
       {
+        "alti": -36.27,
         "description": "Croix : Centre",
         "id": "144 - NO : 9711005-03",
         "indice": "b",
+        "lat": 16.291123333333335,
+        "lon": -61.09627125,
+        "precision_plani_max": "50 cm",
         "vu": "2008"
       },
       {
+        "alti": -39.15,
         "description": "Socle en béton : Repère en bronze PM scellé 1991",
         "gps": "ok",
         "id": "145 - NO : 9711005-04",
         "indice": "c",
+        "lat": 16.290768758333336,
+        "lon": -61.09622272222222,
+        "precision_plani_max": "5 cm",
         "vu": "2008"
       },
       {
+        "alti": -34.639,
         "description": "Ouvrage en béton : Repère laiton 12 mm à tête hémisphérique",
         "gps": "ok",
         "id": "2109 - NO : 9711005-05",
         "indice": "d",
+        "lat": 16.297893000000002,
+        "lon": -61.09588436388889,
+        "precision_plani_max": "5 cm",
         "vu": "2013"
       },
       {
+        "alti": -38.254,
         "description": "Borne IGN 1991 : Repère laiton 18 mm à tête hémisphérique, 2008",
         "gps": "ok",
         "id": "2114 - NO : 9711005-06",
         "indice": "e",
+        "lat": 16.29110798055556,
+        "lon": -61.09639887777778,
+        "precision_alti_max": "50 cm",
+        "precision_plani_max": "5 cm",
         "vu": "2008"
       }
     ],
@@ -41809,28 +41846,34 @@
     "numero": "11006",
     "reperes": [
       {
-        "alti": 8.19,
+        "alti": -12.807,
         "description": "Repère SHOM",
         "gps": "ok",
         "id": "149 - NO : 9711006-04",
         "indice": "c",
-        "lat": 16.333456194444445,
-        "lon": -61.00555955555556,
+        "lat": 16.333539599999998,
+        "lon": -61.00547636666667,
         "precision_plani_max": "5 cm",
         "vu": "2013"
       },
       {
+        "alti": 8.19,
         "description": "Phare : Axe au sommet",
         "id": "150 - NO : 9711006-05",
         "indice": "d",
+        "lat": 16.333456194444445,
+        "lon": -61.00555955555556,
         "precision_plani_max": "50 cm",
         "vu": "2008"
       },
       {
+        "alti": -17.555,
         "description": "Borne IGN 1991 : Repère laiton 12 mm à tête hémisphérique, 2008",
         "gps": "ok",
         "id": "2158 - NO : 9711006-06",
         "indice": "e",
+        "lat": 16.333899477777777,
+        "lon": -61.005734455555555,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "5 cm",
         "vu": "2008"
@@ -41846,28 +41889,34 @@
     "numero": "11202",
     "reperes": [
       {
-        "alti": 14.14,
+        "alti": -38.7,
         "description": "Trottoir : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "177 - NO : 9711202-02",
         "indice": "c",
-        "lat": 15.888408166666666,
-        "lon": -61.30592569444444,
+        "lat": 15.880605583333335,
+        "lon": -61.31413005555555,
         "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -38.25,
         "description": "Borne IGN 1991 : Repère laiton 18 mm à tête hémisphérique, 2008",
         "gps": "ok",
         "id": "2087 - NO : 9711202-05",
         "indice": "d",
+        "lat": 15.88082138888889,
+        "lon": -61.31462575,
         "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": 14.14,
         "description": "Rocher : Repère laiton GM scellé",
         "id": "2110 - NO : 9711202-06",
         "indice": "e",
+        "lat": 15.888408166666666,
+        "lon": -61.30592569444444,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "10 cm",
         "vu": "2008"
@@ -41883,36 +41932,57 @@
     "numero": "11506",
     "reperes": [
       {
+        "alti": -8.83,
         "description": "Clocher : Croix Ouest : Centre",
         "id": "220 - NO : 9711506-03",
         "indice": "b",
+        "lat": 16.27149511111111,
+        "lon": -61.63252355555556,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -8.92,
         "description": "Clocher : Croix Est : Centre",
         "id": "221 - NO : 9711506-04",
         "indice": "c",
+        "lat": 16.27150211111111,
+        "lon": -61.63238525,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -21.77,
         "description": "Mur du cimetière : Repère laiton 18 mm 2008",
         "gps": "ok",
         "id": "2111 - NO : 9711506-07",
         "indice": "d",
+        "lat": 16.271236249999998,
+        "lon": -61.634132888888885,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -14.18,
         "description": "Ecole maternelle : Terrasse : Repère laiton à tête hexagonale, 2008",
         "gps": "ok",
         "id": "2112 - NO : 9711506-05",
         "indice": "e",
+        "lat": 16.271809055555554,
+        "lon": -61.63610247222222,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -23.72,
         "description": "Borne IGN 1991 : Repère à tête hémisphérique laiton 18 mm, 2008",
         "gps": "ok",
         "id": "2113 - NO : 9711506-06",
         "indice": "f",
+        "lat": 16.27120313888889,
+        "lon": -61.63424861111111,
+        "precision_alti_max": "10 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       }
     ],
@@ -41926,68 +41996,89 @@
     "numero": "11706",
     "reperes": [
       {
-        "alti": 3.68,
+        "alti": -24.63,
         "description": "Borne IGN 1991 : Face supérieure : Repère en bronze GM scellé, 1991",
         "gps": "ok",
         "id": "251 - NO : 9711706-02",
         "indice": "a",
+        "lat": 16.324477333333334,
+        "lon": -61.34517138888889,
+        "precision_plani_max": "10 cm",
+        "vu": "2008"
+      },
+      {
+        "alti": 3.68,
+        "description": "Château d'eau : Plate-forme supérieure : Repère en bronze PM, scellé 1989",
+        "id": "250 - NO : 9711706-01",
+        "indice": "b",
         "lat": 16.329143583333334,
         "lon": -61.332775527777784,
         "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
-        "description": "Château d'eau : Plate-forme supérieure : Repère en bronze PM, scellé 1989",
-        "id": "250 - NO : 9711706-01",
-        "indice": "b",
-        "precision_plani_max": "10 cm",
-        "vu": "2008"
-      },
-      {
+        "alti": -25.55,
         "description": "Regard : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "253 - NO : 9711706-04",
         "indice": "c",
+        "lat": 16.3243505,
+        "lon": -61.34504513888889,
         "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -26,
         "description": "Trottoir : Bordure : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "254 - NO : 9711706-05",
         "indice": "d",
+        "lat": 16.32454675,
+        "lon": -61.345040611111116,
         "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -35.64,
         "description": "Batterie : Escalier : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "255 - NO : 9711706-06",
         "indice": "e",
+        "lat": 16.335143444444444,
+        "lon": -61.345936611111114,
         "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -35.82,
         "description": "Batterie : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "256 - NO : 9711706-07",
         "indice": "f",
+        "lat": 16.335117583333332,
+        "lon": -61.34606266666667,
         "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -35.81,
         "description": "Batterie : Repère en bronze PM scellé 1991",
         "gps": "ok",
         "id": "257 - NO : 9711706-08",
         "indice": "g",
+        "lat": 16.335013444444442,
+        "lon": -61.345891333333334,
         "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -38.94,
         "description": "Rocher : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "258 - NO : 9711706-09",
         "indice": "h",
+        "lat": 16.33544263888889,
+        "lon": -61.346036805555556,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "10 cm",
         "vu": "2008"
@@ -42012,28 +42103,34 @@
         "precision_plani_max": "10 cm"
       },
       {
-        "alti": 1.93,
+        "alti": -37.37,
         "description": "Muret décoratif : Repère laiton à tête hémisphérique 18 mm, 2008",
         "gps": "ok",
         "id": "2117 - NO : 9711805-05",
         "indice": "c",
-        "lat": 16.20279783333333,
-        "lon": -61.5862745,
+        "lat": 16.191097805555557,
+        "lon": -61.58999088888889,
         "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -4.25,
         "description": "Bâtiment : Toit en terrasse : Repère laiton à tête hémisphérique, 12 mm 2008",
         "gps": "ok",
         "id": "2115 - NO : 9711805-06",
         "indice": "d",
+        "lat": 16.19529863888889,
+        "lon": -61.596433833333336,
         "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": 1.93,
         "description": "Borne IGN 1991 : Repère laiton à tête hémisphérique 25 mm, 2008",
         "id": "2116 - NO : 9711805-07",
         "indice": "e",
+        "lat": 16.20279783333333,
+        "lon": -61.5862745,
         "precision_alti_max": "5 cm",
         "precision_plani_max": "10 cm",
         "vu": "2008"
@@ -42049,28 +42146,45 @@
     "numero": "11902",
     "reperes": [
       {
+        "alti": -26.52,
         "description": "Borne IGN 1991, Point non retrouvé en 2013, Inexploitable par GPS",
         "id": "303 - NO : 9711902-04",
-        "indice": "a"
+        "indice": "a",
+        "lat": 16.37887661111111,
+        "lon": -61.49250361111111,
+        "precision_plani_max": "10 cm"
       },
       {
+        "alti": -10.75,
         "description": "Clocher : Campanile : Repère en bronze PM scellé 1949",
         "id": "301 - NO : 9711902-02",
         "indice": "c",
+        "lat": 16.379068083333333,
+        "lon": -61.49216438888889,
+        "precision_plani_max": "10 cm",
         "vu": "1991"
       },
       {
+        "alti": -40.31,
         "description": "Quai : Repère laiton 25 mm à tête hémisphérique 2008",
         "gps": "ok",
         "id": "2119 - NO : 9711902-06",
         "indice": "e",
+        "lat": 16.3780455,
+        "lon": -61.496464305555556,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -27.4,
         "description": "Plate-forme en pierre : Repère laiton 12 mm à tête, hémisphérique 2008",
         "gps": "ok",
         "id": "2120 - NO : 9711902-07",
         "indice": "f",
+        "lat": 16.379150555555555,
+        "lon": -61.492582750000004,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       }
     ],
@@ -42104,9 +42218,12 @@
         "vu": "2013"
       },
       {
+        "alti": -40.21,
         "description": "Caye : Repère en laiton GM 2008",
         "id": "2088 - NO : 9711903-06",
         "indice": "e",
+        "lat": 16.39240511111111,
+        "lon": -61.404905194444446,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "10 cm",
         "vu": "2009"
@@ -42122,43 +42239,68 @@
     "numero": "12002",
     "reperes": [
       {
+        "alti": -3.53,
         "description": "Clocher : Base de la croix",
         "id": "317 - NO : 9712002-02",
         "indice": "c",
+        "lat": 16.239214194444447,
+        "lon": -61.53434441666666,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -1.29,
         "description": "Clocher : Centre de la croix",
         "id": "318 - NO : 9712002-03",
         "indice": "d",
+        "lat": 16.239214194444447,
+        "lon": -61.53434444444444,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -37.88,
         "description": "Bloc de béton : Plaquette géodésique 2008",
         "gps": "ok",
         "id": "2124 - NO : 9712002-06",
         "indice": "e",
+        "lat": 16.23506661111111,
+        "lon": -61.535811777777774,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -38.03,
         "description": "Quai : Repère laiton à tête hémisphérique 18 mm 2008",
         "gps": "ok",
         "id": "2125 - NO : 9712002-07",
         "indice": "f",
+        "lat": 16.235198194444447,
+        "lon": -61.535597305555555,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -34.08,
         "description": "Bâtiment : terrasse : Repère laiton à tête hémisphérique 12 mm, 2008",
         "gps": "ok",
         "id": "2133 - NO : 9712002-08",
         "indice": "g",
+        "lat": 16.223484944444444,
+        "lon": -61.530148249999996,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -37.09,
         "description": "Dalle en béton : Repère laiton 25 mm 2008",
         "gps": "ok",
         "id": "2126 - NO : 9712002-09",
         "indice": "h",
+        "lat": 16.223373083333332,
+        "lon": -61.5301785,
+        "precision_alti_max": "10 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       }
     ],
@@ -42172,30 +42314,47 @@
     "numero": "12109",
     "reperes": [
       {
+        "alti": -9.68,
         "description": "Clocher : Centre de la croix",
         "id": "324 - NO : 9712109-02",
         "indice": "c",
+        "lat": 16.233360555555556,
+        "lon": -61.78971436111111,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -38.16,
         "description": "Rocher : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "328 - NO : 9712109-06",
         "indice": "e",
+        "lat": 16.231942055555553,
+        "lon": -61.79081130555555,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -37.65,
         "description": "Rocher : Repère laiton à tête hémisphérique 18 mm 2008",
         "gps": "ok",
         "id": "2122 - NO : 9712109-08",
         "indice": "f",
+        "lat": 16.23339327777778,
+        "lon": -61.79123352777778,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -37.09,
         "description": "Mur de quai : Repère laiton à tête hémisphérique 25 mm 2008",
         "gps": "ok",
         "id": "2121 - NO : 9712109-07",
         "indice": "g",
+        "lat": 16.23167833333333,
+        "lon": -61.79018458333333,
+        "precision_alti_max": "10 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       }
     ],
@@ -42209,17 +42368,26 @@
     "numero": "12301",
     "reperes": [
       {
+        "alti": -10.37,
         "description": "Borne IGN 1991",
         "gps": "ok",
         "id": "351 - NO : 9712301-04",
         "indice": "a",
+        "lat": 17.8930935,
+        "lon": -62.84984547222223,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -9.69,
         "description": "Rocher : Repère bronze PM scellé 1991",
         "gps": "ok",
         "id": "348 - NO : 9712301-01",
         "indice": "b",
+        "lat": 17.89313602777778,
+        "lon": -62.8499685,
+        "precision_alti_max": "10 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       }
     ],
@@ -42274,35 +42442,44 @@
         "precision_plani_max": "10 cm"
       },
       {
-        "alti": 7.55,
+        "alti": -40.6,
         "description": "Rocher : Repère en bronze GM scellé 1991",
         "gps": "ok",
         "id": "371 - NO : 9712502-01",
         "indice": "b",
-        "lat": 16.24495213888889,
-        "lon": -61.173968027777775,
+        "lat": 16.246523333333336,
+        "lon": -61.17740772222222,
         "precision_plani_max": "10 cm",
         "vu": "2011"
       },
       {
+        "alti": 7.55,
         "description": "Croix : Centre, Point en bon état mais douteux (Réserve sur les, coordonnées), Inexploitable par GPS",
         "id": "372 - NO : 9712502-02",
         "indice": "c",
+        "lat": 16.24495213888889,
+        "lon": -61.173968027777775,
         "precision_plani_max": "10 cm"
       },
       {
+        "alti": -10.31,
         "description": "Rocher affleurant : Repère laiton à tête hémisphérique 18 mm, 2008",
         "gps": "ok",
         "id": "2127 - NO : 9712502-05",
         "indice": "d",
+        "lat": 16.244697861111113,
+        "lon": -61.17472961111111,
         "precision_plani_max": "10 cm",
         "vu": "2011"
       },
       {
+        "alti": -27.31,
         "description": "Rocher : Repère laiton à tête hémisphérique 25 mm 2008",
         "gps": "ok",
         "id": "2123 - NO : 9712502-06",
         "indice": "e",
+        "lat": 16.249623444444445,
+        "lon": -61.18920447222222,
         "precision_alti_max": "10 cm",
         "precision_plani_max": "10 cm",
         "vu": "2013"
@@ -42340,21 +42517,24 @@
         "vu": "2008"
       },
       {
-        "alti": 13.94,
+        "alti": -32.93,
         "description": "Réservoir : Trappe de visite : Repère laiton 12 mm à tête, hémisphérique",
         "gps": "ok",
         "id": "2128 - NO : 9712701-04",
         "indice": "d",
-        "lat": 18.07084547222222,
-        "lon": -63.08549688888889,
+        "lat": 18.07617586111111,
+        "lon": -63.08057466666667,
         "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": 13.94,
         "description": "Rocher : Repère laiton 18 mm à tête hémisphérique",
         "gps": "ok",
         "id": "2129 - NO : 9712701-05",
         "indice": "e",
+        "lat": 18.07084547222222,
+        "lon": -63.08549688888889,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "10 cm",
         "vu": "2008"
@@ -42370,41 +42550,66 @@
     "numero": "12805",
     "reperes": [
       {
+        "alti": -22.91,
         "description": "Rocher : Repère en bronze PM scellé 1991",
         "gps": "ok",
         "id": "430 - NO : 9712805-01",
         "indice": "b",
+        "lat": 16.22622622222222,
+        "lon": -61.386053805555555,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -8.48,
         "description": "Clocher : Base de la croix",
         "id": "431 - NO : 9712805-02",
         "indice": "c",
+        "lat": 16.225675166666665,
+        "lon": -61.38550461111111,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -7.31,
         "description": "Clocher : Centre de la croix",
         "id": "432 - NO : 9712805-03",
         "indice": "d",
+        "lat": 16.225675166666665,
+        "lon": -61.385504583333336,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -6.81,
         "description": "Clocher : Croix : Axe au sommet",
         "id": "433 - NO : 9712805-04",
         "indice": "e",
+        "lat": 16.225675166666665,
+        "lon": -61.38550461111111,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -38.02,
         "description": "Pointe rocheuse : Repère laiton 18 mm à tête hémisphérique, 2008",
         "gps": "ok",
         "id": "2134 - NO : 9712805-07",
         "indice": "f",
+        "lat": 16.223444916666665,
+        "lon": -61.38895819444444,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -5.21,
         "description": "Réservoir : Cuve : Bloc de béton : Repère laiton 12 mm à tête, hémisphérique 2008",
         "id": "2135 - NO : 9712805-08",
         "indice": "g",
+        "lat": 16.229612333333332,
+        "lon": -61.38445402777778,
+        "precision_alti_max": "5 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       }
     ],
@@ -42418,38 +42623,59 @@
     "numero": "12904",
     "reperes": [
       {
+        "alti": -35.42,
         "description": "Rocher : Rivet fer ouest 1950",
         "gps": "ok",
         "id": "455 - NO : 9712904-03",
         "indice": "b",
+        "lat": 16.361837083333334,
+        "lon": -61.74370894444444,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -35.66,
         "description": "Rocher : Rivet fer sud 1950",
         "gps": "ok",
         "id": "456 - NO : 9712904-04",
         "indice": "c",
+        "lat": 16.361799833333336,
+        "lon": -61.743676055555554,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -35.78,
         "description": "Rocher : Repère laiton 12 mm 2008",
         "gps": "ok",
         "id": "2130 - NO : 9712904-05",
         "indice": "d",
+        "lat": 16.361576694444445,
+        "lon": -61.74352311111111,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -32.52,
         "description": "Bloc rocheux isolé : Repère laiton 18 mm 2008",
         "gps": "ok",
         "id": "2131 - NO : 9712904-06",
         "indice": "e",
+        "lat": 16.359325944444446,
+        "lon": -61.74412958333333,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -35.96,
         "description": "Borne IGN 1950 en ciment : Repère laiton 18 mm 2008",
         "gps": "ok",
         "id": "2132 - NO : 9712904-07",
         "indice": "f",
+        "lat": 16.361825666666668,
+        "lon": -61.74368116666667,
+        "precision_alti_max": "5 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       }
     ],
@@ -42484,10 +42710,13 @@
         "vu": "2009"
       },
       {
+        "alti": -8.63,
         "description": "Rocher : Repère laiton 25 mm à tête hémisphérique 2008",
         "gps": "ok",
         "id": "2142 - NO : 9713002-04",
         "indice": "c",
+        "lat": 15.857752083333333,
+        "lon": -61.621163055555556,
         "precision_alti_max": "10 cm",
         "precision_plani_max": "10 cm",
         "vu": "2013"
@@ -42525,10 +42754,13 @@
         "vu": "2008"
       },
       {
+        "alti": -37.95,
         "description": "Quai : Repère laiton 18 mm à tête hémisphérique 2008",
         "gps": "ok",
         "id": "2156 - NO : 9713101-04",
         "indice": "c",
+        "lat": 15.868283,
+        "lon": -61.58268166666667,
         "precision_alti_max": "10 cm",
         "precision_plani_max": "10 cm",
         "vu": "2013"
@@ -42544,37 +42776,58 @@
     "numero": "13304",
     "reperes": [
       {
+        "alti": -12.16,
         "description": "Phare : Paratonnerre : Axe et base",
         "id": "513 - NO : 9713304-01",
         "indice": "b",
+        "lat": 15.948336416666667,
+        "lon": -61.70757186111111,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -34.1,
         "description": "Phare : Repère en bronze PM scellé 1991",
         "gps": "ok",
         "id": "516 - NO : 9713304-04",
         "indice": "c",
+        "lat": 15.948361861111112,
+        "lon": -61.70752869444445,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -23.5,
         "description": "Borne IGN 1991 : Repère laiton 18 mm à tête hémisphérique, 2008",
         "gps": "ok",
         "id": "2136 - NO : 9713304-05",
         "indice": "d",
+        "lat": 15.948902777777779,
+        "lon": -61.707185833333334,
+        "precision_plani_max": "10 cm",
         "vu": "2013"
       },
       {
+        "alti": -33,
         "description": "Rocher : Repère en laiton GM 2008",
         "gps": "ok",
         "id": "2137 - NO : 9713304-06",
         "indice": "e",
+        "lat": 15.94843536111111,
+        "lon": -61.706926055555556,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -33.33,
         "description": "Borne IGN 1991 : Repère laiton 18 mm à tête hémisphérique, 2008",
         "gps": "ok",
         "id": "2138 - NO : 9713304-07",
         "indice": "f",
+        "lat": 15.948462444444445,
+        "lon": -61.706665,
+        "precision_alti_max": "10 cm",
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       }
     ],
@@ -42650,17 +42903,26 @@
     "numero": "20206",
     "reperes": [
       {
+        "alti": -36.94,
         "description": "Ponton : Repère bronze hémisphérique 18mm",
         "gps": "ok",
         "id": "2139 - NO : 9720206-01",
         "indice": "a",
+        "lat": 14.49057561111111,
+        "lon": -61.08055663888889,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -36.52,
         "description": "Place : Repère bronze hémisphérique 18mm",
         "gps": "ok",
         "id": "2144 - NO : 9720206-02",
         "indice": "b",
+        "lat": 14.490566055555554,
+        "lon": -61.08036505555556,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       }
     ],
@@ -42704,10 +42966,13 @@
         "precision_plani_max": "10 cm"
       },
       {
+        "alti": -25.47,
         "description": "Allée d'un cimetière : Repère 2008 en laiton à tête hémisphérique, 18mm",
         "gps": "ok",
         "id": "2140 - NO : 9720303-05",
         "indice": "d",
+        "lat": 14.86962463888889,
+        "lon": -61.116426527777776,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "10 cm",
         "vu": "2014"
@@ -42754,10 +43019,13 @@
         "vu": "2014"
       },
       {
+        "alti": -36.36,
         "description": "Fontaine : Repère 2008 en laiton de 18mm de diamètre",
         "gps": "ok",
         "id": "2141 - NO : 9720502-06",
         "indice": "e",
+        "lat": 14.642859694444445,
+        "lon": -61.13875188888889,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "10 cm",
         "vu": "2014"
@@ -42837,28 +43105,34 @@
     "numero": "20901",
     "reperes": [
       {
-        "alti": 2.9,
+        "alti": -29.74,
         "description": "Borne IGN : Stations GPS 1988, 1993 et 2008 : Repère laiton à, tête hémisphérique 18 mm",
         "gps": "ok",
         "id": "578 - NO : 9720901-01",
         "indice": "a",
+        "lat": 14.599063055555556,
+        "lon": -61.09095441666667,
+        "precision_plani_max": "10 cm",
+        "vu": "2008"
+      },
+      {
+        "alti": 2.9,
+        "description": "Phare : Girouette : Axe rose des vents",
+        "id": "580 - NO : 9720901-03",
+        "indice": "b",
         "lat": 14.599634444444446,
         "lon": -61.09020105555556,
         "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
-        "description": "Phare : Girouette : Axe rose des vents",
-        "id": "580 - NO : 9720901-03",
-        "indice": "b",
-        "precision_plani_max": "10 cm",
-        "vu": "2008"
-      },
-      {
+        "alti": -35.64,
         "description": "Dalle en béton : Repère 2008 laiton à tête hémisphérique 18mm",
         "gps": "ok",
         "id": "2090 - NO : 9720901-04",
         "indice": "c",
+        "lat": 14.601530722222222,
+        "lon": -61.07916813888889,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "10 cm",
         "vu": "2014"
@@ -43135,36 +43409,57 @@
     "numero": "21903",
     "reperes": [
       {
+        "alti": -26.86,
         "description": "Borne IGN : Repère 2008 en laiton à tête hémisphérique 18mm",
         "gps": "ok",
         "id": "704 - NO : 9721903-02",
         "indice": "a",
+        "lat": 14.801897305555556,
+        "lon": -61.22581383333333,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -26.36,
         "description": "Phare : Soubassement : Face supérieure : Rivet ancien",
         "gps": "ok",
         "id": "706 - NO : 9721903-04",
         "indice": "b",
+        "lat": 14.80185713888889,
+        "lon": -61.22579594444445,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -15.8,
         "description": "Phare : Centre boule",
         "id": "703 - NO : 9721903-01",
         "indice": "c",
+        "lat": 14.801855527777779,
+        "lon": -61.22581863888889,
+        "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": -25.93,
         "description": "Bloc de béton : Repère 2008 en laiton à tête hémisphérique 18, mm, Point non retrouvé en 2014, Recouverte d'un mètre de terre en 2014 ou peut-être disparue, Repère de nivellement A.AB - 41-I",
         "gps": "ok",
         "id": "2096 - NO : 9721903-05",
-        "indice": "d"
+        "indice": "d",
+        "lat": 14.803392027777779,
+        "lon": -61.225788361111114,
+        "precision_plani_max": "10 cm"
       },
       {
+        "alti": -24.76,
         "description": "Trottoir : Repère 2008 en laiton à tête hémisphérique 18 mm",
         "gps": "ok",
         "id": "2093 - NO : 9721903-06",
         "indice": "e",
+        "lat": 14.802491972222223,
+        "lon": -61.22543069444445,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       }
     ],
@@ -43188,39 +43483,45 @@
         "vu": "2014"
       },
       {
-        "alti": 27.9,
+        "alti": -13.34,
         "description": "Clocher : Sommet toit : Base girouette (Clocher constaté refait, en 2014, altitude fausse)",
         "id": "720 - NO : 9722103-02",
         "indice": "b",
+        "lat": 14.531260722222223,
+        "lon": -60.98219244444444,
+        "precision_plani_max": "10 cm",
+        "vu": "2014"
+      },
+      {
+        "alti": 27.9,
+        "description": "Réservoir nord-ouest : Terrasse : Repère bronze PM scellé :, Stations GPS 1988, 1993 et 2008",
+        "gps": "ok",
+        "id": "719 - NO : 9722103-01",
+        "indice": "c",
         "lat": 14.521987222222224,
         "lon": -60.978649250000004,
         "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
-        "alti": 29.3,
-        "description": "Réservoir nord-ouest : Terrasse : Repère bronze PM scellé :, Stations GPS 1988, 1993 et 2008",
-        "gps": "ok",
-        "id": "719 - NO : 9722103-01",
-        "indice": "c",
-        "lat": 14.521744972222223,
-        "lon": -60.97857069444445,
-        "precision_plani_max": "10 cm",
-        "vu": "2014"
-      },
-      {
+        "alti": -31.65,
         "description": "Terre-plein : Clou d'arpentage 2008 pourri",
         "gps": "ok",
         "id": "2097 - NO : 9722103-06",
         "indice": "e",
+        "lat": 14.524517805555556,
+        "lon": -60.98090663888889,
         "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": 29.3,
         "description": "Réservoir ancien : Terrasse : Repère 2008 en laiton à tête, hémisphérique 18 mm",
         "gps": "ok",
         "id": "2095 - NO : 9722103-07",
         "indice": "f",
+        "lat": 14.521744972222223,
+        "lon": -60.97857069444445,
         "precision_alti_max": "5 cm",
         "precision_plani_max": "10 cm",
         "vu": "2014"
@@ -43236,17 +43537,26 @@
     "numero": "22304",
     "reperes": [
       {
+        "alti": -17.8,
         "description": "Cimetière : Dalle : Repère 2008 en laiton à tête hémisphérique 18, mm",
         "gps": "ok",
         "id": "2094 - NO : 9722304-01",
         "indice": "a",
+        "lat": 14.559100416666668,
+        "lon": -60.94058149999999,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -18.55,
         "description": "Aqueduc : Repère de nivellement",
         "gps": "ok",
         "id": "2091 - NO : 9722304-02",
         "indice": "b",
+        "lat": 14.559654111111112,
+        "lon": -60.94058008333333,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       }
     ],
@@ -43293,17 +43603,26 @@
     "numero": "22610",
     "reperes": [
       {
+        "alti": -23.33,
         "description": "Cimetière : Dalle : Repère 2008 en laiton à tête hémisphérique, 18mm",
         "gps": "ok",
         "id": "2148 - NO : 9722610-01",
         "indice": "a",
+        "lat": 14.437446055555556,
+        "lon": -60.880730444444445,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -36.87,
         "description": "Trottoir : Repère 2008 en laiton à tête hémisphérique 18mm",
         "gps": "ok",
         "id": "2149 - NO : 9722610-02",
         "indice": "b",
+        "lat": 14.434129888888888,
+        "lon": -60.881869888888886,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       }
     ],
@@ -43317,23 +43636,36 @@
     "numero": "22706",
     "reperes": [
       {
+        "alti": -8.45,
         "description": "Borne IGN : Station GPS 1988 : Repère 2008 en laiton à tête, hémisphérique 18 mm scellé au centre de la face supérieure",
         "gps": "ok",
         "id": "776 - NO : 9722706-01",
         "indice": "a",
+        "lat": 14.468544611111112,
+        "lon": -60.93930661111111,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -9.95,
         "description": "Pont : Trottoir : Repère bronze PM scellé",
         "gps": "ok",
         "id": "778 - NO : 9722706-03",
         "indice": "b",
+        "lat": 14.468656611111111,
+        "lon": -60.93934161111111,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -6.68,
         "description": "Regard : Plaque : Centre",
         "id": "779 - NO : 9722706-04",
         "indice": "c",
+        "lat": 14.468446583333334,
+        "lon": -60.93906408333333,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       }
     ],
@@ -43441,21 +43773,24 @@
         "vu": "2014"
       },
       {
-        "alti": 117.17,
+        "alti": -2.74,
         "description": "Rocher : Borne",
         "gps": "ok",
         "id": "2103 - NO : 9723006-10",
         "indice": "i",
-        "lat": 14.772685500000001,
-        "lon": -60.88212544444445,
+        "lat": 14.774606611111112,
+        "lon": -60.87542716666667,
         "precision_plani_max": "10 cm",
         "vu": "2008"
       },
       {
+        "alti": 117.17,
         "description": "Borne IGN 1988 : centre : rivet",
         "gps": "ok",
         "id": "2177 - NO : 9723006-11",
         "indice": "j",
+        "lat": 14.772685500000001,
+        "lon": -60.88212544444445,
         "precision_alti_max": "10 cm",
         "precision_plani_max": "10 cm",
         "vu": "2014"
@@ -43471,17 +43806,26 @@
     "numero": "23211",
     "reperes": [
       {
+        "alti": -36.05,
         "description": "Digue : Repère 2008 en laiton à tête hémisphérique 18 mm",
         "gps": "ok",
         "id": "2151 - NO : 9723211-01",
         "indice": "a",
+        "lat": 14.547618333333332,
+        "lon": -60.837646972222224,
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       },
       {
+        "alti": -36.04,
         "description": "Digue : Repère 2008 en laiton à tête hémisphérique 18 mm",
         "gps": "ok",
         "id": "2152 - NO : 9723211-02",
         "indice": "b",
+        "lat": 14.546842027777778,
+        "lon": -60.83689425,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "10 cm",
         "vu": "2014"
       }
     ],
@@ -43495,17 +43839,26 @@
     "numero": "301A",
     "reperes": [
       {
+        "alti": -30.473,
         "description": "Dalle : Repère laiton à tête hémisphérique diamètre 18mm",
         "gps": "ok",
         "id": "2179 - NO : 97301A-04",
         "indice": "d",
+        "lat": 4.314482511111111,
+        "lon": -52.1313975,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.625,
         "description": "Dalle : Repère laiton à tête hémisphérique diamètre 25mm",
         "gps": "ok",
         "id": "2180 - NO : 97301A-05",
         "indice": "e",
+        "lat": 4.313433230555555,
+        "lon": -52.12904551111111,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -43519,24 +43872,37 @@
     "numero": "301B",
     "reperes": [
       {
+        "alti": -30.759,
         "description": "Regard circulaire : Repère laiton 2015 à tête hémisphérique de, 25 mm de diamètre",
         "gps": "ok",
         "id": "2244 - NO : 97301B-01",
         "indice": "a",
+        "lat": 4.4864897500000005,
+        "lon": -52.03622015,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.785,
         "description": "Regard circulaire : Repère laiton 2015 à tête hémisphérique de, 25 mm de diamètre",
         "gps": "ok",
         "id": "2245 - NO : 97301B-02",
         "indice": "b",
+        "lat": 4.486158038888889,
+        "lon": -52.03708288055555,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.711,
         "description": "Regard circulaire : Repère laiton 2015 à tête hémisphérique de, 18 mm de diamètre",
         "gps": "ok",
         "id": "2246 - NO : 97301B-03",
         "indice": "c",
+        "lat": 4.485767861111111,
+        "lon": -52.03579818888889,
+        "precision_alti_max": "5 mm local",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -43550,24 +43916,37 @@
     "numero": "302A",
     "reperes": [
       {
+        "alti": -30.459,
         "description": "Rocher : Repère hémisphérique en laiton diamètre 12mm scellé",
         "gps": "ok",
         "id": "861 - NO : 97302A-01",
         "indice": "a",
+        "lat": 4.944191466666667,
+        "lon": -52.332165800000006,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.443,
         "description": "Rocher : Repère hémisphérique en laiton diamètre 12mm scellé",
         "gps": "ok",
         "id": "862 - NO : 97302A-02",
         "indice": "b",
+        "lat": 4.9437116888888895,
+        "lon": -52.33125093055556,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.585,
         "description": "Rocher : Repère hémisphérique en laiton diamètre 12mm scellé",
         "gps": "ok",
         "id": "863 - NO : 97302A-03",
         "indice": "c",
+        "lat": 4.943687911111112,
+        "lon": -52.330920750000004,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -43610,20 +43989,24 @@
     "numero": "30301",
     "reperes": [
       {
+        "alti": -21.784,
         "description": "Borne IGN 1995 en béton : Repère laiton à tête hémisphérique, de 25mm de diamètre",
         "gps": "ok",
         "id": "867 - NO : 9730301-01",
         "indice": "a",
-        "lat": 5.525577194444445,
-        "lon": -53.387353194444444,
+        "lat": 5.541817088888889,
+        "lon": -53.427513080555556,
         "precision_plani_max": ".69",
         "vu": "2015"
       },
       {
+        "alti": -13.386,
         "description": "Pilier 1977 : Repère bronze GM",
         "gps": "ok",
         "id": "868 - NO : 9730301-02",
         "indice": "b",
+        "lat": 5.539006,
+        "lon": -53.42671456111111,
         "precision_plani_max": "",
         "vu": "2015"
       },
@@ -43631,6 +44014,8 @@
         "description": "Tour Telecom : Plateforme supérieure : marque au pointeau",
         "id": "869 - NO : 9730301-03",
         "indice": "c",
+        "lat": 5.525577194444445,
+        "lon": -53.387353194444444,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "5 cm",
         "vu": "1995"
@@ -43646,17 +44031,26 @@
     "numero": "303A",
     "reperes": [
       {
+        "alti": -31.611,
         "description": "Dalle : centre : repère laiton 2015 à tête hémisphérique de 25, mm de diamètre",
         "gps": "ok",
         "id": "2221 - NO : 97303A-04",
         "indice": "d",
+        "lat": 5.479001330555556,
+        "lon": -53.20314396111112,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.138,
         "description": "Chambre telecom : repère laiton 2015 à tête hémisphérique de 12, mm de diamètre",
         "gps": "ok",
         "id": "2222 - NO : 97303A-05",
         "indice": "e",
+        "lat": 5.477093538888889,
+        "lon": -53.20705255,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -43670,30 +44064,35 @@
     "numero": "304A",
     "reperes": [
       {
+        "alti": -28.841,
         "description": "Borne 1977 en béton : Repère laiton à tête hémisphérique de 12, mm de diamètre",
         "gps": "ok",
         "id": "873 - NO : 97304A-01",
         "indice": "a",
-        "lat": 5.159584916666667,
-        "lon": -52.626579472222225,
+        "lat": 5.159134780555556,
+        "lon": -52.6263694,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.198,
         "description": "Stèle : Repère 1977 en fer",
         "gps": "ok",
         "id": "874 - NO : 97304A-02",
         "indice": "b",
-        "lat": 5.1595962222222225,
-        "lon": -52.62657661111111,
+        "lat": 5.159727727777778,
+        "lon": -52.62616683888889,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -31.768,
         "description": "Rocher : Repère laiton 1995 à tête hémisphérique de 12 mm de, diamètre",
         "gps": "ok",
         "id": "875 - NO : 97304A-03",
         "indice": "c",
+        "lat": 5.158324302777778,
+        "lon": -52.626458225,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
@@ -43701,6 +44100,8 @@
         "description": "Tour Dreyfus : Terrasse supérieure : Repère bronze PM",
         "id": "876 - NO : 97304A-04",
         "indice": "d",
+        "lat": 5.159584916666667,
+        "lon": -52.626579472222225,
         "precision_plani_max": "50 cm",
         "vu": "2001"
       },
@@ -43708,22 +44109,30 @@
         "description": "Tour Dreyfus : Axe",
         "id": "877 - NO : 97304A-05",
         "indice": "e",
+        "lat": 5.1595962222222225,
+        "lon": -52.62657661111111,
         "precision_plani_max": "50 cm",
         "vu": "2015"
       },
       {
+        "alti": -31.938,
         "description": "Jetée : Repère SHOM",
         "gps": "ok",
         "id": "2227 - NO : 97304A-06",
         "indice": "f",
+        "lat": 5.1582391,
+        "lon": -52.62674671111111,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.119,
         "description": "Dalle rocheuse : Repère laiton 2015 à tête hémisphérique de 12, mm de diamètre",
         "gps": "ok",
         "id": "2228 - NO : 97304A-07",
         "indice": "g",
+        "lat": 5.159319988888889,
+        "lon": -52.62670495,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -43739,12 +44148,13 @@
     "numero": "304B",
     "reperes": [
       {
+        "alti": -24.202,
         "description": "Borne IGN 1967 : Repère aiguille",
         "gps": "ok",
         "id": "879 - NO : 97304B-02",
         "indice": "a",
-        "lat": 5.265920888888889,
-        "lon": -52.802754111111106,
+        "lat": 5.26599835,
+        "lon": -52.80262473888889,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
@@ -43752,36 +44162,38 @@
         "description": "Tube SO (rouge) : Axe et sommet, Point non retrouvé en 2015, Repère de nivellement M'.BC - 5-II",
         "id": "880 - NO : 97304B-03",
         "indice": "b",
-        "lat": 5.256196,
-        "lon": -52.80732261111111,
+        "lat": 5.265920888888889,
+        "lon": -52.802754111111106,
         "precision_plani_max": "50 cm"
       },
       {
         "description": "Borne\"repère d'azimut\" : Repère aiguille",
         "id": "881 - NO : 97304B-04",
         "indice": "c",
-        "lat": 5.251153638888889,
-        "lon": -52.80495113888889,
+        "lat": 5.256196,
+        "lon": -52.80732261111111,
         "precision_plani_max": "50 cm",
         "vu": "2015"
       },
       {
+        "alti": -25.772,
         "description": "Pilier d'une station GNSS permanente : Repère",
         "gps": "ok",
         "id": "882 - NO : 97304B-05",
         "indice": "d",
-        "lat": 5.251144555555555,
-        "lon": -52.80496022222222,
+        "lat": 5.2521799611111115,
+        "lon": -52.80595944722222,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -24.076,
         "description": "Pilier DIANE I (n 84) : Platine aluminium : marque au pointeau",
         "gps": "ok",
         "id": "878 - NO : 97304B-01",
         "indice": "e",
-        "lat": 5.251732277777778,
-        "lon": -52.804437111111106,
+        "lat": 5.251153641666667,
+        "lon": -52.80496021111111,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
@@ -43789,16 +44201,16 @@
         "description": "Pilier n II : Repère bronze, Point non retrouvé en 2015, Repère absent ou recouvert de béton",
         "id": "883 - NO : 97304B-06",
         "indice": "f",
-        "lat": 5.251558055555556,
-        "lon": -52.805456694444445,
+        "lat": 5.251153638888889,
+        "lon": -52.80495113888889,
         "precision_plani_max": "50 cm"
       },
       {
         "description": "Pilier n III : Repère bronze, Point non retrouvé en 2015, Repère absent ou recouvert de béton",
         "id": "884 - NO : 97304B-07",
         "indice": "g",
-        "lat": 5.25064725,
-        "lon": -52.804452749999996,
+        "lat": 5.251144555555555,
+        "lon": -52.80496022222222,
         "precision_plani_max": "50 cm"
       },
       {
@@ -43806,8 +44218,8 @@
         "gps": "ok",
         "id": "885 - NO : 97304B-08",
         "indice": "h",
-        "lat": 5.250645027777778,
-        "lon": -52.80553525,
+        "lat": 5.251732277777778,
+        "lon": -52.804437111111106,
         "precision_plani_max": "50 cm",
         "vu": "2015"
       },
@@ -43816,6 +44228,8 @@
         "gps": "ok",
         "id": "886 - NO : 97304B-09",
         "indice": "i",
+        "lat": 5.251558055555556,
+        "lon": -52.805456694444445,
         "precision_plani_max": "50 cm",
         "vu": "2015"
       },
@@ -43824,6 +44238,8 @@
         "gps": "ok",
         "id": "887 - NO : 97304B-10",
         "indice": "j",
+        "lat": 5.25064725,
+        "lon": -52.804452749999996,
         "precision_plani_max": "50 cm",
         "vu": "2015"
       },
@@ -43832,6 +44248,8 @@
         "gps": "ok",
         "id": "888 - NO : 97304B-11",
         "indice": "k",
+        "lat": 5.250645027777778,
+        "lon": -52.80553525,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "50 cm",
         "vu": "2015"
@@ -43921,10 +44339,15 @@
     "numero": "304D",
     "reperes": [
       {
+        "alti": -27.4,
         "description": "Mini-borne cylindrique : clou d'arpentage",
         "gps": "ok",
         "id": "2249 - NO : 97304D-01",
         "indice": "a",
+        "lat": 5.1530211,
+        "lon": -52.66991196111111,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -43937,17 +44360,26 @@
     "numero": "305A",
     "reperes": [
       {
+        "alti": -31.754,
         "description": "Dalle béton sur la Place des fêtes: repère laiton à tête, hémisphérique de 18 mm de diamètre",
         "gps": "ok",
         "id": "2186 - NO : 97305A-03",
         "indice": "c",
+        "lat": 5.013219461111111,
+        "lon": -52.473643,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.973,
         "description": "Socle d'un banc : repère laiton à tête hémisphérique de 18mm de, diamètre",
         "gps": "ok",
         "id": "2187 - NO : 97305A-04",
         "indice": "d",
+        "lat": 5.016331430555556,
+        "lon": -52.47604513888889,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -43981,17 +44413,26 @@
     "numero": "305C",
     "reperes": [
       {
+        "alti": -25.415,
         "description": "Dalle béton : repère laiton à tête hémisphérique de 18 mm de, diamètre",
         "gps": "ok",
         "id": "2184 - NO : 97305C-01",
         "indice": "a",
+        "lat": 4.932070861111112,
+        "lon": -52.41411791111111,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -25.312,
         "description": "Aqueduc : repère laiton à tête hémisphérique de 18 mm de, diamètre",
         "gps": "ok",
         "id": "2185 - NO : 97305C-02",
         "indice": "b",
+        "lat": 4.931073230555556,
+        "lon": -52.41614808888889,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44005,24 +44446,37 @@
     "numero": "30601",
     "reperes": [
       {
+        "alti": -28.32,
         "description": "Pilier 1977 : Repère bronze diamètre 25 mm",
         "gps": "ok",
         "id": "900 - NO : 9730601-01",
         "indice": "a",
+        "lat": 5.7461729111111115,
+        "lon": -53.943747099999996,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.066,
         "description": "Borne polyester-béton 1995 : Repère 2015 à tête hexagonale en, laiton",
         "gps": "ok",
         "id": "901 - NO : 9730601-02",
         "indice": "b",
+        "lat": 5.745847330555556,
+        "lon": -53.944811619444444,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -28.947,
         "description": "Poste de transformation haute tension : Socle : Repère laiton à, tête hémisphérique diamètre 12 mm",
         "gps": "ok",
         "id": "902 - NO : 9730601-03",
         "indice": "c",
+        "lat": 5.745818738888889,
+        "lon": -53.9446885,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44036,17 +44490,21 @@
     "numero": "30604",
     "reperes": [
       {
+        "alti": -16.612,
         "description": "Borne 1977 en béton : Repère bronze GM, Point non retrouvé en 2007",
         "id": "903 - NO : 9730604-01",
         "indice": "a",
-        "lat": 5.596438888888889,
-        "lon": -53.810985555555554,
+        "lat": 5.589200966666667,
+        "lon": -53.82191413333334,
         "precision_plani_max": ".41"
       },
       {
+        "alti": -14.023,
         "description": "Bâtiment Telecom : Terrasse supérieure : Repère bronze 1977 de, 12 mm de diamètre",
         "id": "904 - NO : 9730604-02",
         "indice": "b",
+        "lat": 5.596438975,
+        "lon": -53.81098555833333,
         "precision_plani_max": "",
         "vu": "2007"
       },
@@ -44054,27 +44512,38 @@
         "description": "Pylône Telecom : Plateforme supérieure : Marque au pointeau, sur boulon, Point non retrouvé en 2007",
         "id": "905 - NO : 9730604-03",
         "indice": "c",
+        "lat": 5.596438888888889,
+        "lon": -53.810985555555554,
         "precision_plani_max": "5 cm"
       },
       {
+        "alti": -19.683,
         "description": "Allée en béton : Repère laiton 2015 à tête bombée diamètre 25, mm",
         "id": "2223 - NO : 9730604-04",
         "indice": "d",
+        "lat": 5.604246638888888,
+        "lon": -53.81562013888889,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -18.961,
         "description": "Accès bétonné vers un poste de transformation : Repère laiton, 2015 à tête hémisphérique de 12 mm de diamètre",
         "gps": "ok",
         "id": "2224 - NO : 9730604-05",
         "indice": "e",
+        "lat": 5.603590488888888,
+        "lon": -53.817991588888894,
         "precision_plani_max": "50 cm",
         "vu": "2015"
       },
       {
+        "alti": -19.435,
         "description": "Plateau omnisports : Repère laiton 2015 à tête hémisphérique de, 18 mm de diamètre",
         "id": "2225 - NO : 9730604-06",
         "indice": "f",
+        "lat": 5.604173419444444,
+        "lon": -53.81621056944444,
         "precision_alti_max": "10 cm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -44090,48 +44559,63 @@
     "numero": "30605",
     "reperes": [
       {
+        "alti": -30.685,
         "description": "Borne en béton : Repère hémisphérique en laiton diamètre, 25mm, Support en mauvais état, point exploitable en 2015, la borne existe mais le repère a disparu",
         "gps": "ok",
         "id": "906 - NO : 9730605-01",
         "indice": "a",
-        "lat": 5.670371666666667,
-        "lon": -53.779471666666666,
+        "lat": 5.659035352777778,
+        "lon": -53.801856719444444,
         "precision_plani_max": ".25"
       },
       {
         "description": "Tour Telecom : Plateforme supérieure : marque au pointeau",
         "id": "909 - NO : 9730605-04",
         "indice": "c",
+        "lat": 5.670371666666667,
+        "lon": -53.779471666666666,
         "precision_plani_max": "",
         "vu": "1995"
       },
       {
+        "alti": -28.794,
         "description": "Borne 1977 en béton (enterrée) : Repère bronze GM",
         "id": "908 - NO : 9730605-03",
         "indice": "d",
+        "lat": 5.670371694444444,
+        "lon": -53.77947165277778,
         "precision_plani_max": "5 cm",
         "vu": "2007"
       },
       {
+        "alti": -28.951,
         "description": "Socle monument au morts : Repère laiton 2015 à tête, hémisphérique de 12 mm de diamètre",
         "gps": "ok",
         "id": "2230 - NO : 9730605-05",
         "indice": "e",
+        "lat": 5.667344380555556,
+        "lon": -53.77673676111111,
         "precision_plani_max": "50 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.424,
         "description": "Aqueduc : Parapet : Repère laiton 2015 à tête bombée de 25 mm, de diamètre",
         "id": "2231 - NO : 9730605-06",
         "indice": "f",
+        "lat": 5.669563830555556,
+        "lon": -53.77713156944444,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -28.603,
         "description": "Regard : Repère laiton 2015 à tête hémisphérique de 18 mm de, diamètre",
         "gps": "ok",
         "id": "2232 - NO : 9730605-07",
         "indice": "g",
+        "lat": 5.668632038888889,
+        "lon": -53.78169043055556,
         "precision_alti_max": "5 cm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -44178,12 +44662,13 @@
     "numero": "30608",
     "reperes": [
       {
+        "alti": -2.791,
         "description": "Borne 1995 en polyester-béton : Repère à tête hémisphérique de, 25 mmm de diamètre",
         "gps": "ok",
         "id": "914 - NO : 9730608-02",
         "indice": "b",
-        "lat": 5.491832944444445,
-        "lon": -53.55484136111111,
+        "lat": 5.504322080555555,
+        "lon": -53.5465711,
         "precision_plani_max": "57",
         "vu": "2015"
       },
@@ -44192,13 +44677,18 @@
         "gps": "ok",
         "id": "915 - NO : 9730608-03",
         "indice": "c",
+        "lat": 5.491832944444445,
+        "lon": -53.55484136111111,
         "precision_plani_max": ""
       },
       {
+        "alti": -1.961,
         "description": "Borne de nivellement légèrement inclinée : Repère laiton 2015 de, 18 mm de diamètre",
         "gps": "ok",
         "id": "2229 - NO : 9730608-04",
         "indice": "d",
+        "lat": 5.5029262305555555,
+        "lon": -53.54886775,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -44214,24 +44704,37 @@
     "numero": "307A",
     "reperes": [
       {
+        "alti": -27.91,
         "description": "Pilier 1995 : Repère hémisphérique en laiton diamètre 25mm, scellé",
         "gps": "ok",
         "id": "917 - NO : 97307A-02",
         "indice": "b",
+        "lat": 4.824887638888889,
+        "lon": -52.3626907,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.955,
         "description": "Dalle en béton hexagonale: Face supérieure: Repère, hémisphérique en laiton de 18 mm de diamètre",
         "gps": "ok",
         "id": "2213 - NO : 97307A-03",
         "indice": "c",
+        "lat": 4.822646558333333,
+        "lon": -52.365495969444446,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.928,
         "description": "Plot béton: Face supérieure: au centre: Boulon de 18 mm de, diamètre",
         "gps": "ok",
         "id": "2214 - NO : 97307A-04",
         "indice": "d",
+        "lat": 4.82277455,
+        "lon": -52.36536438888889,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44245,10 +44748,15 @@
     "numero": "307B",
     "reperes": [
       {
+        "alti": -28.252,
         "description": "Plaque en béton : repère 2015 en laiton à tête hémisphérique de, 25 mm de diamètre",
         "gps": "ok",
         "id": "2248 - NO : 97307B-01",
         "indice": "a",
+        "lat": 4.904317797222222,
+        "lon": -52.35984535,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44262,52 +44770,81 @@
     "numero": "308A",
     "reperes": [
       {
+        "alti": -24.527,
         "description": "Borne polyester-béton 1995 : Repère hémisphérique en laiton, diamètre 25mm",
         "gps": "ok",
         "id": "918 - NO : 97308A-01",
         "indice": "a",
+        "lat": 3.8934514805555556,
+        "lon": -51.80511843611111,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -24.314,
         "description": "Piste : Extrémité sud-ouest : Spit n 500",
         "gps": "ok",
         "id": "919 - NO : 97308A-02",
         "indice": "b",
+        "lat": 3.8925356777777775,
+        "lon": -51.80591025555555,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -23.975,
         "description": "Piste : Extremite SO : Axe : Repère hémisphérique en laiton, diamètre 12mm scellé",
         "gps": "ok",
         "id": "920 - NO : 97308A-03",
         "indice": "c",
+        "lat": 3.8924620694444445,
+        "lon": -51.80570368055555,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -24.315,
         "description": "Socle : Capteurs solaires : Repère hémisphérique en laiton, diamètre 12 mm",
         "gps": "ok",
         "id": "921 - NO : 97308A-04",
         "indice": "d",
+        "lat": 3.8924023388888886,
+        "lon": -51.80551107777777,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -24.84,
         "description": "Piste : Extrémité nord-est : Spit n 501",
         "gps": "ok",
         "id": "922 - NO : 97308A-05",
         "indice": "e",
+        "lat": 3.9028415,
+        "lon": -51.80258100277778,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -24.415,
         "description": "Piste : Extrémité nord-est : Axe : Repère hémisphérique en, laiton diamètre 12 mm",
         "gps": "ok",
         "id": "923 - NO : 97308A-06",
         "indice": "f",
+        "lat": 3.9027820805555553,
+        "lon": -51.80236789166666,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -26.061,
         "description": "Dalle en béton :, Repère hémisphérique en laiton diamètre 12 mm",
         "gps": "ok",
         "id": "2212 - NO : 97308A-07",
         "indice": "g",
+        "lat": 3.8904335194444446,
+        "lon": -51.8046875,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44320,17 +44857,26 @@
     "numero": "309A",
     "reperes": [
       {
+        "alti": -28.801,
         "description": "Dalle en béton : Repère laiton 2015 à tête hémisphérique de 18, mm de diamètre",
         "gps": "ok",
         "id": "2216 - NO : 97309A-01",
         "indice": "a",
+        "lat": 4.9049337,
+        "lon": -52.275861138888885,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -28.319,
         "description": "Dalle en béton : Repère laiton 2015 à tête hémisphérique de 18, mm de diamètre",
         "gps": "ok",
         "id": "2218 - NO : 97309A-02",
         "indice": "b",
+        "lat": 4.904492411111112,
+        "lon": -52.276838938888886,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44343,10 +44889,15 @@
     "numero": "309B",
     "reperes": [
       {
+        "alti": -31.481,
         "description": "Mur de quai : Douille SHOM petit modèle",
         "gps": "ok",
         "id": "2250 - NO : 97309B-01",
         "indice": "a",
+        "lat": 4.853745161111111,
+        "lon": -52.27718928888889,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44360,28 +44911,34 @@
     "numero": "310A",
     "reperes": [
       {
-        "alti": 21.006,
+        "alti": -8.376,
         "description": "Borne polyester-béton : Repère laiton à tête hémisphérique de, 25mm de diamètre",
         "gps": "ok",
         "id": "924 - NO : 97310A-01",
         "indice": "a",
-        "lat": 4.727428647222222,
-        "lon": -52.320354227777784,
+        "lat": 4.728178180555556,
+        "lon": -52.32418468888889,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": 21.006,
         "description": "Réservoir : Repère hémisphérique en laiton diamètre 12mm, scellé",
         "id": "925 - NO : 97310A-02",
         "indice": "b",
+        "lat": 4.727428647222222,
+        "lon": -52.320354227777784,
         "precision_plani_max": "5 cm",
         "vu": "2005"
       },
       {
+        "alti": -24.217,
         "description": "Socle d'un monument ornemental scénographique: Repère laiton, à tête hémisphérique de 25 mm de diamètre",
         "gps": "ok",
         "id": "2215 - NO : 97310A-03",
         "indice": "c",
+        "lat": 4.7315282000000005,
+        "lon": -52.32702896944445,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -44397,24 +44954,37 @@
     "numero": "310B",
     "reperes": [
       {
+        "alti": -21.802,
         "description": "Dalle en béton : Repère laiton 2015 à tête hémisphérique de 25, mm de diamètre",
         "gps": "ok",
         "id": "2238 - NO : 97310B-01",
         "indice": "a",
+        "lat": 4.5736855499999995,
+        "lon": -52.47137616944445,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -5.339,
         "description": "Dalle en béton : Repère laiton 2015 à tête hémisphérique de 25, mm de diamètre",
         "gps": "ok",
         "id": "2239 - NO : 97310B-02",
         "indice": "b",
+        "lat": 4.57402055,
+        "lon": -52.46233061111111,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -4.163,
         "description": "Socle d'ancrage d'un hauban de pylône : Repère en laiton 2015 à, tête hémisphérique de 12 mm de diamètre",
         "gps": "ok",
         "id": "2240 - NO : 97310B-03",
         "indice": "c",
+        "lat": 4.569912338888889,
+        "lon": -52.46994743055556,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44428,22 +44998,24 @@
     "numero": "31101",
     "reperes": [
       {
+        "alti": -28.777,
         "description": "Borne polyester-béton 1995 : Repère laiton à tête hémisphérique, de 25 mm de diamètre",
         "gps": "ok",
         "id": "926 - NO : 9731101-01",
         "indice": "a",
-        "lat": 5.50550525,
-        "lon": -54.02814630555555,
+        "lat": 5.499037880555556,
+        "lon": -54.02903551944444,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -28.308,
         "description": "Croix : Socle : Repère laiton 1995 à tête hémisphérique de 12, mm de diamètre",
         "gps": "ok",
         "id": "927 - NO : 9731101-02",
         "indice": "b",
-        "lat": 5.505505277777778,
-        "lon": -54.02814630555555,
+        "lat": 5.4992111,
+        "lon": -54.02774735,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
@@ -44451,6 +45023,8 @@
         "description": "Tour telecom : Plateforme supérieure : marque au pointeau",
         "id": "929 - NO : 9731101-04",
         "indice": "d",
+        "lat": 5.50550525,
+        "lon": -54.02814630555555,
         "precision_plani_max": "50 cm",
         "vu": "1995"
       },
@@ -44458,13 +45032,18 @@
         "description": "Borne IGN 1977 en béton : Repère bronze GM, Point non retrouvé en 2007",
         "id": "930 - NO : 9731101-05",
         "indice": "e",
+        "lat": 5.505505277777778,
+        "lon": -54.02814630555555,
         "precision_plani_max": "50 cm"
       },
       {
+        "alti": -30.029,
         "description": "Socle statue : Repère laiton 2015 à tête hémisphérique de 12 mm, de diamètre",
         "gps": "ok",
         "id": "2226 - NO : 9731101-06",
         "indice": "f",
+        "lat": 5.5054537805555555,
+        "lon": -54.03166753055555,
         "precision_alti_max": "5 mm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -44480,19 +45059,23 @@
     "numero": "31201",
     "reperes": [
       {
+        "alti": -24.55,
         "description": "Borne IGN 1977 en béton : Repère bronze diamètre 25 mm",
         "gps": "ok",
         "id": "931 - NO : 9731201-01",
         "indice": "a",
-        "lat": 5.4075228611111115,
-        "lon": -53.02644758333333,
+        "lat": 5.389424480555556,
+        "lon": -52.99581778888889,
         "precision_plani_max": ".87",
         "vu": "2015"
       },
       {
+        "alti": -22.001,
         "description": "Bâtiment Télécom : Terrasse supérieure : Repère bronze, diamètre 12 mm",
         "id": "932 - NO : 9731201-02",
         "indice": "b",
+        "lat": 5.4075229388888895,
+        "lon": -53.02644751111111,
         "precision_plani_max": "",
         "vu": "2015"
       },
@@ -44500,6 +45083,8 @@
         "description": "Pylône Télécom : Plateforme supérieure : marque au pointeau",
         "id": "934 - NO : 9731201-04",
         "indice": "d",
+        "lat": 5.4075228611111115,
+        "lon": -53.02644758333333,
         "precision_alti_max": "1 cm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -44515,23 +45100,36 @@
     "numero": "31202",
     "reperes": [
       {
+        "alti": -28.065,
         "description": "Borne 1977 en béton : Repère bronze GM",
         "gps": "ok",
         "id": "935 - NO : 9731202-01",
         "indice": "a",
+        "lat": 5.320203438888889,
+        "lon": -52.88542691111111,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -27.305,
         "description": "Borne NGF : Repère 1995 en laiton à tête hémisphérique de, 12mm de diamètre, Support en mauvais état, exploitation incertaine en, 2015",
         "gps": "ok",
         "id": "937 - NO : 9731202-03",
-        "indice": "b"
+        "indice": "b",
+        "lat": 5.320154097222222,
+        "lon": -52.885997213888885,
+        "precision_plani_max": "5 cm"
       },
       {
+        "alti": -27.028,
         "description": "Borne 1995 en polyester-béton : Repère en aluminium à tête, hémisphérique de 25 mm de diamètre",
         "gps": "ok",
         "id": "936 - NO : 9731202-02",
         "indice": "c",
+        "lat": 5.3232801499999995,
+        "lon": -52.89153896944445,
+        "precision_alti_max": "1 cm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44545,44 +45143,56 @@
     "numero": "312A",
     "reperes": [
       {
-        "alti": 6.891,
+        "alti": -18.679,
         "description": "Borne EDF 1995 (13506) : Tube : Axe et sommet",
         "id": "938 - NO : 97312A-01",
         "indice": "a",
+        "lat": 5.063999858333333,
+        "lon": -53.04812597222222,
+        "precision_plani_max": "5 cm",
+        "vu": "2015"
+      },
+      {
+        "alti": 6.891,
+        "description": "Pilier EDF 1995 (20022) : Etoile de centrage",
+        "gps": "ok",
+        "id": "939 - NO : 97312A-02",
+        "indice": "b",
         "lat": 5.060811280555555,
         "lon": -53.051015030555554,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
-        "description": "Pilier EDF 1995 (20022) : Etoile de centrage",
-        "gps": "ok",
-        "id": "939 - NO : 97312A-02",
-        "indice": "b",
-        "precision_plani_max": "5 cm",
-        "vu": "2015"
-      },
-      {
+        "alti": -5.972,
         "description": "Rocher: Face supérieure: Repère hémisphérique laiton de 25, mm de diamètre",
         "gps": "ok",
         "id": "2219 - NO : 97312A-03",
         "indice": "c",
+        "lat": 5.06682265,
+        "lon": -53.045018069444446,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -3.629,
         "description": "Bloc de béton: Face supérieure: Tige en fer: sommet",
         "gps": "ok",
         "id": "2220 - NO : 97312A-04",
         "indice": "d",
+        "lat": 5.066383161111111,
+        "lon": -53.04594596111111,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -12.632,
         "description": "Pilier EDF : Etoile de centrage",
         "gps": "ok",
         "id": "2247 - NO : 97312A-05",
         "indice": "e",
+        "lat": 5.064826244444444,
+        "lon": -53.046708466666665,
         "precision_alti_max": "50 cm",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -44598,24 +45208,37 @@
     "numero": "312B",
     "reperes": [
       {
+        "alti": -30.069,
         "description": "Socle d'une ancienne cabine téléphonique : Repère laiton 2015 à, tête hémisphérique de 18 mm de diamètre",
         "gps": "ok",
         "id": "2241 - NO : 97312B-01",
         "indice": "a",
+        "lat": 5.379331969444444,
+        "lon": -52.95576561944445,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -30.381,
         "description": "Trottoir en béton : Repère laiton 2015 à tête arrondie de 25 mm, de diamètre",
         "gps": "ok",
         "id": "2242 - NO : 97312B-02",
         "indice": "b",
+        "lat": 5.3775242,
+        "lon": -52.95895056944445,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.622,
         "description": "Allée bétonnée : Repère laiton 2015 à tête hémisphérique de 12, mm de diamètre",
         "gps": "ok",
         "id": "2243 - NO : 97312B-03",
         "indice": "c",
+        "lat": 5.375562288888888,
+        "lon": -52.95399511111111,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44629,17 +45252,26 @@
     "numero": "313A",
     "reperes": [
       {
+        "alti": -31.64,
         "description": "Borne de 1995 en polyester-béton : Repère laiton à tête, hémisphérique de 25 mm de diamètre",
         "gps": "ok",
         "id": "940 - NO : 97313A-01",
         "indice": "a",
+        "lat": 4.892493238888888,
+        "lon": -52.49216523055556,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -31.126,
         "description": "Dalle : Repère laiton à tête hémisphérique de 18 mm de diamètre",
         "gps": "ok",
         "id": "2178 - NO : 97313A-03",
         "indice": "c",
+        "lat": 4.892113288888888,
+        "lon": -52.493091669444446,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
@@ -44653,29 +45285,35 @@
     "numero": "314A",
     "reperes": [
       {
-        "alti": 3.051,
+        "alti": -29.814,
         "description": "Dalle béton : repère laiton à tête hémisphérique de 25 mm de, diamètre",
         "gps": "ok",
         "id": "2181 - NO : 97314A-01",
         "indice": "a",
-        "lat": 4.21013505,
-        "lon": -51.671665149999995,
+        "lat": 4.20889335,
+        "lon": -51.670951788888885,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -31.028,
         "description": "Escalier du débarcadère : repère laiton à tête hémisphérique de, 25 mm de diamètre",
         "gps": "ok",
         "id": "2182 - NO : 97314A-02",
         "indice": "b",
+        "lat": 4.208927830555556,
+        "lon": -51.67081726111111,
         "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": 3.051,
         "description": "Dalle en béton : Repère en laiton à tête  hémisphérique de 12 mm, de diamètre",
         "gps": "ok",
         "id": "2183 - NO : 97314A-03",
         "indice": "c",
+        "lat": 4.21013505,
+        "lon": -51.671665149999995,
         "precision_alti_max": "5 mm local",
         "precision_plani_max": "5 cm",
         "vu": "2015"
@@ -45060,38 +45698,59 @@
     "numero": "360A",
     "reperes": [
       {
+        "alti": -21.453,
         "description": "Dalle en béton : Repère laiton 2015 à tête hémisphérique de 12, mm de diamètre",
         "gps": "ok",
         "id": "2233 - NO : 97360A-01",
         "indice": "a",
+        "lat": 5.162421780555556,
+        "lon": -54.33713253888889,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -17.085,
         "description": "Borne incendie : Socle : Repère laiton 2015 à tête hémisphérique, de 18 mm de diamètre",
         "gps": "ok",
         "id": "2234 - NO : 97360A-02",
         "indice": "b",
+        "lat": 5.1503525111111115,
+        "lon": -54.340876988888894,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -29.22,
         "description": "Dalle en béton : Repère laiton 2015 à tête hémisphérique de 25, mm de diamètre",
         "gps": "ok",
         "id": "2235 - NO : 97360A-03",
         "indice": "c",
+        "lat": 5.15829103888889,
+        "lon": -54.34366336944445,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -27.268,
         "description": "Socle d'un banc : Repère laiton 2015 à tête hexagonale 19 mm",
         "gps": "ok",
         "id": "2236 - NO : 97360A-04",
         "indice": "d",
+        "lat": 5.156271269444445,
+        "lon": -54.34384886944445,
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       },
       {
+        "alti": -21.451,
         "description": "Plaque de ciment : Repère laiton 2015 à tête hémisphérique de, 12 mm de diamètre",
         "gps": "ok",
         "id": "2237 - NO : 97360A-05",
         "indice": "e",
+        "lat": 5.162005188888889,
+        "lon": -54.337543611111116,
+        "precision_alti_max": "5 mm",
+        "precision_plani_max": "5 cm",
         "vu": "2015"
       }
     ],
