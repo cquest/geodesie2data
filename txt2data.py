@@ -52,6 +52,8 @@ for l in f:
   elif state==6 and l!='':
     d['reperes'][len(d['reperes'])-1]['description']=d['reperes'][len(d['reperes'])-1]['description']+', '+l
   elif state==7 and l[:9]=='Système :': # début coordonnées
+    # on récupère le SRS
+    d['reperes'][len(d['reperes'])-1]['systeme']=l[10:]
     state=8
     repere=0 # on repart sur le premier repère du tableau d['reperes']
   elif state==8:
