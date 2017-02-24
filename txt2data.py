@@ -76,7 +76,7 @@ for l in f:
       d['reperes'][repere]['lon']=lon
       d['reperes'][repere]['lat']=lat
       if c.group(9)!='':
-        d['reperes'][repere]['alti_ellipsoide']=float(c.group(9))
+        d['reperes'][repere]['ele']=float(c.group(9))
       repere = repere+1
     else:
       c = re_lat.match(l)
@@ -86,7 +86,7 @@ for l in f:
           lat=-lat
         d['reperes'][repere]['lat']=lat
         if c.group(5)!='':
-          d['reperes'][repere]['alti_ellipsoide']=float(c.group(5))
+          d['reperes'][repere]['ele']=float(c.group(5))
         if 'lon' in d['reperes'][repere]:
           repere = repere+1
       else:
@@ -155,7 +155,7 @@ for l in f:
       
   elif state==16 and l!='' and l.find('m')==-1:
     try: # au cas où il n'y a pas d'altitude pour le repère (exemple: 1905801.pdf)
-      d['reperes'][repere]['alti_proj']=float(l)
+      d['reperes'][repere]['z']=float(l)
     except:
       pass
     if repere==len(d['reperes'])-1:
