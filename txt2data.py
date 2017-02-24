@@ -7,17 +7,20 @@ d = {'reperes':[]} # données du site
 re_lonlat = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
 re_lat = re.compile(r"^ *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
 re_lon = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO])$")
+re_date= re.compile(r"^(\d\d)/(\d\d)/(\d\d\d\d)")
 
 f = open(sys.argv[1])
 for l in f:
   l=l[:-1]
+  #print(state,l)
+
   if state==0 and l=='Réseau Géodésique Français': # première page, entête
     state=1
   elif state==1 and l!='':
-    d['nom'] = l
+    d['site_nom'] = l
     state=2
   elif state==2 and l[:10]=='No du Site':
-    d['numero']=l[14:]
+    d['site_num']=l[12:]
   elif state==2 and l[:13]=='Département :':
     d['departement']=l[15:]
   elif state==2 and l[:9]=='Commune :':
@@ -28,9 +31,14 @@ for l in f:
     d['reseau']=l[9:]
   elif state==2 and l=='IGN/SGN': # page suivante, détail
     state=3
+  elif (state==3) and re_date.match(l) is not None:
+    date = re_date.match(l)
+    d['date']=date.group(3)+'/'+date.group(2)+'/'+date.group(1)
   elif (state==3 or state==6 or state==7) and l[:13]=='Identifiant :':
     d['reperes'].append({})
-    d['reperes'][len(d['reperes'])-1]['id']=l[14:]
+    num = l.find('NO :')
+    d['reperes'][len(d['reperes'])-1]['id']=l[14:num-3]
+    d['reperes'][len(d['reperes'])-1]['numero']=l[num+5:]
     state = 4
   elif state==4 and l[:7]=='Point :':
     d['reperes'][len(d['reperes'])-1]['indice']=l[8:]
@@ -53,7 +61,7 @@ for l in f:
     d['reperes'][len(d['reperes'])-1]['description']=d['reperes'][len(d['reperes'])-1]['description']+', '+l
   elif state==7 and l[:9]=='Système :': # début coordonnées
     # on récupère le SRS
-    d['reperes'][len(d['reperes'])-1]['systeme']=l[10:]
+    d['ref_latlon']=l[10:]
     state=8
     repere=0 # on repart sur le premier repère du tableau d['reperes']
   elif state==8:
@@ -68,7 +76,7 @@ for l in f:
       d['reperes'][repere]['lon']=lon
       d['reperes'][repere]['lat']=lat
       if c.group(9)!='':
-        d['reperes'][repere]['alti']=float(c.group(9))
+        d['reperes'][repere]['alti_ellipsoide']=float(c.group(9))
       repere = repere+1
     else:
       c = re_lat.match(l)
@@ -78,7 +86,7 @@ for l in f:
           lat=-lat
         d['reperes'][repere]['lat']=lat
         if c.group(5)!='':
-          d['reperes'][repere]['alti']=float(c.group(5))
+          d['reperes'][repere]['alti_ellipsoide']=float(c.group(5))
         if 'lon' in d['reperes'][repere]:
           repere = repere+1
       else:
@@ -91,23 +99,86 @@ for l in f:
           if 'lat' in d['reperes'][repere]:
             repere = repere+1
     if l=='' and repere>0:
-      state=9
-      repere=0
-  elif state==9:
-    d['reperes'][repere]['precision_plani_max']=l[5:]
-    if repere==len(d['reperes'])-1:
       state=10
-    else:
-      repere = repere+1
-  elif state==10 and l=='Précision alti':
+      repere=0
+
+  elif (state==10) and l.find('Projection')>=0:
+    d['ref_proj']=l[10:]
+    if l.find('RGF93')>=0:
+      d['ref_proj_epsg']='2154'
+    if l.find('RGAF09')>=0:
+      d['ref_proj_epsg']='5490'
+    if l.find('RGR92_07')>=0:
+      d['ref_proj_epsg']='2975'
+    alti = l.find("Système altimétrique :")
+    if alti>=0:
+      d['ref_proj_alti']=l[alti+23:]
+   
+  elif state==10 and l=='e (m)':
     state=11
-  elif state==11:
-    d['reperes'][repere]['precision_alti_max']=l[5:]
+    repere = 0
+
+  elif state==11 and l.find('.')>0:
+    d['reperes'][repere]['x']=float(l)
     if repere==len(d['reperes'])-1:
       state=12
     else:
       repere = repere+1
-  #print(state,l)
+
+  elif state==12 and l=='n (m)':
+    state=13
+    repere = 0
+  elif state==13 and l!='':
+    d['reperes'][repere]['y']=float(l)
+    if repere==len(d['reperes'])-1:
+      state=14
+      repere=0
+    else:
+      repere = repere+1
+
+  elif state==14 and l=='Précision plani Altitude (m)':
+    state=15
+  elif state==15:
+    if l.find('m')>0:
+      p = re.match(r".* (\d+)( |)(m|cm|mm)",l)
+      pr = int(p.group(1))
+      if p.group(3)=='cm':
+        pr = pr/100
+      if p.group(3)=='mm':
+        pr = pr/1000
+      d['reperes'][repere]['precision_plani_max']=pr
+      if repere==len(d['reperes'])-1:
+        state=16
+        repere=0
+      else:
+        repere = repere+1
+      
+  elif state==16 and l!='' and l.find('m')==-1:
+    try: # au cas où il n'y a pas d'altitude pour le repère (exemple: 1905801.pdf)
+      d['reperes'][repere]['alti_proj']=float(l)
+    except:
+      pass
+    if repere==len(d['reperes'])-1:
+      state=17
+      repere=0
+    else:
+      repere = repere+1
+
+  elif (state==16 or state==17) and l=='Précision alti':
+    state=18
+  elif state==18:
+    if l.find('m')>0:
+      p = re.match(r".* (\d+)( |)(m|cm|mm)",l)
+      pr = int(p.group(1))
+      if p.group(3)=='cm':
+        pr = pr/100
+      if p.group(3)=='mm':
+        pr = pr/1000
+      d['reperes'][repere]['precision_alti_max']=pr
+    if repere==len(d['reperes'])-1:
+      state=19
+    else:
+      repere = repere+1
   
 print(json.dumps(d,sort_keys=True))
 
