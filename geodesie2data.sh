@@ -8,8 +8,7 @@ jq -r '.features[].properties|[.url, .nom]|@csv' rbf.json | sed 's/"//g' | paral
 # extraction texte contenu dans les PDF
 for f in rbf/*.pdf; do pdf2txt.py $f > $f.txt; done
 # conversion en json
-: > rbf.sjson
-for f in rbf/*.pdf.txt; do echo $f; python3 txt2data.py $f >> rbf.sjson; done
+: > rbf.sjson ;for f in rbf/*.pdf.txt; do echo $f; python3 txt2data.py $f >> rbf.sjson; done
 jq -s '.' rbf.sjson > rbf-all.json
 
 exit
@@ -21,8 +20,7 @@ jq -r '.features[].properties|[.url, .nom]|@csv' rdf.json | sed 's/"//g' | paral
 # extraction texte contenu dans les PDF
 for f in rdf/*.pdf; do pdf2txt.py $f > $f.txt ; done
 # conversion en json
-: > rdf.sjson
-for f in rdf/*.pdf.txt; do echo $f; python3 txt2data.py $f >> rdf.sjson; done
+: > rdf.sjson ; for f in rdf/*.pdf.txt; do echo $f; python3 txt2data.py $f >> rdf.sjson; done
 jq -s '.' rdf.sjson > rdf-all.json
 
 
