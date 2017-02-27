@@ -4,9 +4,11 @@ import re
 
 state = 0
 d = {'reperes':[]} # données du site
-re_lonlat = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
+re_lonlatele = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
+re_lonlat = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)''$")
 re_lat = re.compile(r"^ *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
 re_lon = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO])$")
+re_alti = re.compile(r" +([\-0-9\.]*)$")
 re_date= re.compile(r"^(\d\d)/(\d\d)/(\d\d\d\d)")
 
 f = open(sys.argv[1])
@@ -34,7 +36,7 @@ for l in f:
   elif (state==3) and re_date.match(l) is not None:
     date = re_date.match(l)
     d['date']=date.group(3)+'/'+date.group(2)+'/'+date.group(1)
-  elif (state==3 or state==6 or state==7) and l[:13]=='Identifiant :':
+  elif (state==2 or state==3 or state==6 or state==7) and l[:13]=='Identifiant :':
     d['reperes'].append({})
     num = l.find('NO :')
     d['reperes'][len(d['reperes'])-1]['id']=l[14:num-3]
@@ -49,6 +51,8 @@ for l in f:
   elif state==6 and l[:20]=='Point vu en place en':
     d['reperes'][len(d['reperes'])-1]['vu']=l[21:]
     state = 7
+  elif state==6 and l[:9]=='Point non':
+    state = 7
   elif state==6 and l=="© 2009 IGN - INSTITUT NATIONAL DE L'INFORMATION GÉOGRAPHIQUE ET FORESTIÈRE":
     state=7
   elif (state==7 or state==6) and l[:27]=='Azimut de la prise de vue :':
@@ -59,13 +63,13 @@ for l in f:
     d['reperes'][len(d['reperes'])-1]['gps']='ok'
   elif state==6 and l!='':
     d['reperes'][len(d['reperes'])-1]['description']=d['reperes'][len(d['reperes'])-1]['description']+', '+l
-  elif state==7 and l[:9]=='Système :': # début coordonnées
+  elif (state==6 or state==7) and l[:9]=='Système :': # début coordonnées
     # on récupère le SRS
     d['ref_latlon']=l[10:]
     state=8
     repere=0 # on repart sur le premier repère du tableau d['reperes']
   elif state==8:
-    c = re_lonlat.match(l)
+    c = re_lonlatele.match(l)
     if c is not None:
       lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
       if c.group(4)=='O':
@@ -76,7 +80,7 @@ for l in f:
       d['reperes'][repere]['lon']=lon
       d['reperes'][repere]['lat']=lat
       if c.group(9)!='':
-        d['reperes'][repere]['alti_ellipsoide']=float(c.group(9))
+        d['reperes'][repere]['ele']=float(c.group(9))
       repere = repere+1
     else:
       c = re_lat.match(l)
@@ -86,7 +90,7 @@ for l in f:
           lat=-lat
         d['reperes'][repere]['lat']=lat
         if c.group(5)!='':
-          d['reperes'][repere]['alti_ellipsoide']=float(c.group(5))
+          d['reperes'][repere]['ele']=float(c.group(5))
         if 'lon' in d['reperes'][repere]:
           repere = repere+1
       else:
@@ -98,6 +102,22 @@ for l in f:
           d['reperes'][repere]['lon']=lon
           if 'lat' in d['reperes'][repere]:
             repere = repere+1
+        else:
+          c = re_alti.match(l)
+          if c is not None:
+            d['reperes'][repere]['ele']=float(c.group(1))
+          else:
+            c = re_lonlat.match(l)
+            if c is not None:
+              lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
+              if c.group(4)=='O':
+                lon=-lon
+              lat=int(c.group(5))+int(c.group(6))/60+float(c.group(7))/3600
+              if c.group(8)=='S':
+                lat=-lat
+              d['reperes'][repere]['lon']=lon
+              d['reperes'][repere]['lat']=lat
+              repere = repere+1
     if l=='' and repere>0:
       state=10
       repere=0
@@ -155,7 +175,7 @@ for l in f:
       
   elif state==16 and l!='' and l.find('m')==-1:
     try: # au cas où il n'y a pas d'altitude pour le repère (exemple: 1905801.pdf)
-      d['reperes'][repere]['alti_proj']=float(l)
+      d['reperes'][repere]['z']=float(l)
     except:
       pass
     if repere==len(d['reperes'])-1:
