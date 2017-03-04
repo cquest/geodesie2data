@@ -84,8 +84,41 @@ for l in f:
   elif (state==6 or state==7) and l[:9]=='Système :': # début coordonnées
     # on récupère le SRS
     d['ref_latlon']=l[10:]
-    state=8
-    repere=0 # on repart sur le premier repère du tableau d['reperes']
+    state = 8
+    repere = 0 # on repart sur le premier repère du tableau d['reperes']
+
+  elif state==20 and re_lon.match(l) is not None:
+    c = re_lon.match(l)
+    if c is not None:
+      lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
+      if c.group(4)=='O':
+        lon=-lon
+      d['reperes'][repere]['lon']=lon
+      repere = repere+1
+    elif l[:8]=='Latitude':
+      state = 21
+      repere = 0 # on repart sur le premier repère du tableau pour les latitude/alti
+  elif state==20 or state==21:
+    c = re_lat.match(l)
+    if c is not None:
+      lat=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
+      if c.group(4)=='S':
+        lat=-lat
+      if state==20:
+        state=21
+        repere = 0
+        for r in d['reperes']:
+          if 'lat' in r:
+            repere = repere+1
+      d['reperes'][repere]['lat']=lat
+      if c.group(5)!='':
+        d['reperes'][repere]['ele']=float(c.group(5))
+      if repere==len(d['reperes'])-1: # terminé, on retourne
+        state = 10
+      else:
+        repere = repere+1
+
+
   elif state==8:
     c = re_lonlatele.match(l)
     if c is not None:
@@ -117,9 +150,14 @@ for l in f:
           lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
           if c.group(4)=='O':
             lon=-lon
-          d['reperes'][repere]['lon']=lon
-          if 'lat' in d['reperes'][repere]:
-            repere = repere+1
+          if 'lon' in d['reperes'][repere]:
+            d['reperes'][repere+1]['lon']=lon
+            repere = repere+2
+            state = 20
+          else:
+            d['reperes'][repere]['lon']=lon
+            if 'lat' in d['reperes'][repere]:
+              repere = repere+1
         else:
           c = re_alti.match(l)
           if c is not None:
@@ -141,7 +179,7 @@ for l in f:
               d['reperes'][repere]['lon']=lon
               d['reperes'][repere]['lat']=lat
               repere = repere+1
-    if l=='' and repere>0:
+    if l=='' and 'lat' in d['reperes'][len(d['reperes'])-1] and 'lon' in d['reperes'][len(d['reperes'])-1]:
       state=10
       repere=0
 
