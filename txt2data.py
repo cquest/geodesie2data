@@ -48,7 +48,7 @@ for l in f:
     state=3
   elif state==2 and l!='' and 'site_nom' not in d:
     d['site_nom'] = l
-  elif (state==3) and re_date.match(l) is not None:
+  elif (state==3 or state==7) and re_date.match(l) is not None:
     date = re_date.match(l)
     d['date_fiche']=date.group(3)+'/'+date.group(2)+'/'+date.group(1)
   elif (state==2 or state==3 or state==6 or state==7) and l[:13]=='Identifiant :':
