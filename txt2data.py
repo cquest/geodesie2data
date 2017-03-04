@@ -192,7 +192,14 @@ for l in f:
     if l.find('RGR92_07')>=0:
       d['ref_proj_epsg']='2975'
     if l.find('RGFG95')>=0:
-      d['ref_proj_epsg']='4624'
+      d['ref_proj_epsg']='2972'
+    if l.find('RGM04')>=0:
+      d['ref_proj_epsg']='4471'
+    if l.find('RGSPM06')>=0:
+      d['ref_proj_epsg']='4467'
+    if l.find('UTM NORD FUSEAU 20')>=0:
+      d['ref_proj_epsg']='4559'
+
     alti = l.find("Système altimétrique :")
     if alti>=0:
       d['ref_proj_alti']=l[alti+23:]
