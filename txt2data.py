@@ -67,6 +67,9 @@ for l in f:
   elif state==6 and l[:20]=='Point vu en place en':
     d['reperes'][len(d['reperes'])-1]['vu']=l[21:]
     state = 7
+  elif state==6 and l[:23]=='Support en mauvais état':
+    d['reperes'][len(d['reperes'])-1]['vu']=l[-4:]
+    state = 7
   elif state==6 and l[:9]=='Point non':
     state = 7
   elif state==6 and l=="© 2009 IGN - INSTITUT NATIONAL DE L'INFORMATION GÉOGRAPHIQUE ET FORESTIÈRE":
