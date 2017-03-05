@@ -7,7 +7,13 @@ Afin d'éviter que chacun ne refasse des milliers de téléchargements et d'anal
 - fichier pour le [Réseau de Base](https://github.com/cquest/geodesie2data/raw/master/rbf-all.json) (un peu plus de 1100 bornes)
 - fichier pour le [Réseau de Détail](https://github.com/cquest/geodesie2data/raw/master/rdf-all.json.zip) (plus de 64000 bornes)
 
+## Licence des données
+
 L'IGN a par ailleurs confirmé que ces données étaient sous [**Licence Ouverte**](https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf). Si vous les réutilisez n'oublier pas d'indiquer "source IGN/geodesie.ign.fr" ainsi que la date d'extraction car ce sont des données qui évoluent avec le temps.
+
+## Qualité
+
+La récupération des données contenues dans les PDF n'étant pas triviale, des erreurs sont possibles. Merci de les signaler afin d'améliorer le script d'extraction (txt2data.py). Reportez vous toujours aux fiches officielles (PDF) en cas de doute.
 
 ## Dépendances
 
@@ -40,53 +46,53 @@ La sortie est en json.
 ### Mise en forme du json final
 C'est à nouveau **jq** qui est utilisé pour transformer le stream json dans un unique tableau json.
 
-## Exemple
+## Exemple (JSON)
 ```
-  {
-    "commune": "SAINT-LAURENT-SUR-SAONE",
-    "date": "2017/02/21",
-    "departement": "AIN (01)",
-    "ld": "",
-    "ref_latlon": "RGF93 (ETRS89) - Ellipsoïde : IAG GRS 1980",
-    "ref_proj": "RGF93 (ETRS89) - Projection : LAMBERT-93 - Système altimétrique : NGF-IGN",
-    "ref_proj_alti": "NGF-IGN",
-    "ref_proj_epsg": "2154",
-    "reperes": [
-      {
-        "description": "Pont : Culée S.E. : Repère hémisphérique 1994 en laiton de 18, mm de diamètre",
-        "ele": 231.737,
-        "id": "1814",
-        "indice": "b",
-        "lat": 46.30848479444444,
-        "lon": 4.850522066666667,
-        "nivellement": "J'.D.N3 - 144-III",
-        "numero": "0137002-02",
-        "precision_alti_max": 5,
-        "precision_plani_max": 0.05,
-        "vu": "2016",
-        "x": 842401.481,
-        "y": 6580400.169,
-        "z": 183.084
-      },
-      {
-        "description": "Borne IGN 2004 dans un massif de béton : repère hémisphérique, en laiton de 12mm de diamètre",
-        "ele": 223.616,
-        "id": "1816",
-        "indice": "c",
-        "lat": 46.306721575,
-        "lon": 4.841772013888889,
-        "nivellement": "J'.D.N3 - 144-II",
-        "numero": "0137002-04",
-        "precision_alti_max": 5,
-        "precision_plani_max": 0.05,
-        "vu": "2016",
-        "x": 841732.835,
-        "y": 6580188.669,
-        "z": 174.92
-      }
-    ],
-    "reseau": "Réseau de base",
-    "site_nom": "SAINT-LAURENT-SUR-SAONE II",
-    "site_num": "0137002"
-  }
+{
+  "commune": "SAINT-LEU-LA-FORET",
+  "date_fiche": "2017/01/26",
+  "departement": "VAL-D'OISE (95)",
+  "ref_latlon": "RGF93 (ETRS89) - Ellipsoïde : IAG GRS 1980",
+  "ref_proj": "RGF93 (ETRS89) - Projection : LAMBERT-93 - Système altimétrique : NGF-IGN",
+  "ref_proj_alti": "NGF-IGN",
+  "ref_proj_epsg": "2154",
+  "reperes": [
+    {
+      "description": "Borne 1995 en béton : Repère hémisphérique en laiton de 18 mm de diamètre",
+      "ele": 106.563,
+      "gps": "ok",
+      "id": "206818",
+      "indice": "a",
+      "lat": 49.005742552777775,
+      "lon": 2.2484194333333334,
+      "nivellement": "G.C.T3 - 344-I",
+      "numero": "9556301-01",
+      "precision_alti_max": 0.005,
+      "precision_plani_max": 0.01,
+      "vu": "2015",
+      "x": 645012.411,
+      "y": 6878687.024,
+      "z": 62.84
+    },
+    {
+      "description": "Borne 1995 en Polyester-béton : Repère hémisphérique de 25 mm de diamètre",
+      "ele": 114.722,
+      "gps": "ok",
+      "id": "206819",
+      "indice": "b",
+      "lat": 49.009885402777776,
+      "lon": 2.2395948194444446,
+      "numero": "9556301-02",
+      "precision_alti_max": 0.1,
+      "precision_plani_max": 0.05,
+      "vu": "2014",
+      "x": 644371.236,
+      "y": 6879153.912,
+      "z": 71.01
+    }
+  ],
+  "reseau": "Réseau de base",
+  "site_nom": "SAINT-LEU-LA-FORET I",
+  "site_num": "9556301"
+}
 ```
