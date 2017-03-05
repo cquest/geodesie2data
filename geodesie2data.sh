@@ -3,7 +3,7 @@ ogr2ogr -f geojson rbf.json "WFS:http://geodesie.ign.fr/cgi-bin/mapserv?map=/var
 
 # récupération des PDF
 mkdir -p rbf
-jq -r '.features[].properties|[.url, .nom]|@csv' rbf.json | sed 's/"//g' | parallel --colsep ',' wget -q {1} -O rbf/{2}.pdf
+jq -r '.features[].properties|[.url, .nom]|@csv' rbf.json | sed 's/"//g' | parallel --colsep ',' wget -q -nc {1} -O rbf/{2}.pdf
 
 # extraction texte contenu dans les PDF
 for f in rbf/*.pdf; do pdf2txt.py $f > $f.txt; done
@@ -14,6 +14,8 @@ jq -s '.' rbf.sjson > rbf-all.json
 # conversion en csv
 echo 'numero,indice,id,nivellement,date_fiche,reseau,site_nom,site_num,commune,ld,departement,description,gps,vu,lat,lon,ele,x,y,z,precision_plani_max,precision_alti_max,ref_latlon,ref_proj,ref_proj_epsg,ref_proj_alti' > rbf-all.csv
 for f in rbf/*.pdf.txt; do echo $f; python3 txt2data.py $f csv >> rbf-all.csv; done
+csvclean rbf-all.csv
+mv rbf-all_out.csv rbf-all.csv
 
 # récupération données RDF via WFS, attention lat/lon inversés !
 ogr2ogr -f geojson rdf.json "WFS:http://geodesie.ign.fr/cgi-bin/mapserv?map=/var/webapp/lib/visugeod/mapfile_bdg.map" sit_rdfType
@@ -27,9 +29,11 @@ for f in rdf/*.pdf; do pdf2txt.py $f > $f.txt ; done
 jq -s '.' rdf.sjson > rdf-all.json
 
 # conversion en csv
-echo 'numero,indice,id,nivellement,date_fiche,reseau,site_nom,site_num,commune,ld,departement,description,gps,vu,lat,lon,ele,x,y,z,precision_plani_max,precision_alti_max,ref_latlon,ref_proj,ref_proj_epsg,ref_proj_alti' > all.csv
-for f in rbf/*.pdf.txt; do echo $f; python3 txt2data.py $f csv >> all.csv; done
+cp rbf-all.csv all.csv
 for f in rdf/*.pdf.txt; do echo $f; python3 txt2data.py $f csv >> all.csv; done
+csvclean all.csv
+mv all_out.csv rbf-rdf.csv
+gzip rbf-rdf.csv
 
 exit
 
