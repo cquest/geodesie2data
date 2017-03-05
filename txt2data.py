@@ -97,7 +97,7 @@ for l in f:
     state = 8
     repere = 0 # on repart sur le premier repère du tableau d['reperes']
 
-  elif state==8:
+  elif state==8 and l.find('Projection')<0:
     c = re_lonlat.match(l)
     if c is not None:
       lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
@@ -131,11 +131,12 @@ for l in f:
         if c is not None:
           addxyz('ele',float(c.group(1)),d['reperes'])
 
-    if l=='' and 'lat' in d['reperes'][len(d['reperes'])-1] and 'lon' in d['reperes'][len(d['reperes'])-1]:
-      state=10
-      repere=0
+    if l.find('<')>0:
+        state = 10
 
-  elif (state==10) and l.find('Projection')>=0:
+  elif (state==8 or state==10) and l.find('Projection')>=0:
+    repere=0
+    state=10
     d['ref_proj']=l[10:]
     if l.find('RGF93')>=0:
       d['ref_proj_epsg']='2154'
@@ -174,12 +175,16 @@ for l in f:
     state=13
     repere = 0
   elif state==13 and l!='':
-    d['reperes'][repere]['y']=float(l)
-    if repere==len(d['reperes'])-1:
-      state=14
-      repere=0
-    else:
-      repere = repere+1
+    try:
+      d['reperes'][repere]['y']=float(l)
+      if repere==len(d['reperes'])-1:
+        state=14
+        repere=0
+      else:
+        repere = repere+1
+    except:
+      state=15
+      pass
 
   elif state==14 and l=='Précision plani Altitude (m)':
     state=15
