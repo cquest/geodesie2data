@@ -4,12 +4,19 @@ import json
 import csv
 import re
 
+def addxyz(key, value, store):
+  r = -1
+  for row in store:
+    r = r+1
+    if key not in row:
+      row[key]=value
+      return r
+
 state = 0
 d = {'reperes':[]} # données du site
-re_lonlatele = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
-re_lonlat = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)''$")
+re_lonlat = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO]) *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
 re_lat = re.compile(r"^ *(\d+)° (\d+)' ([0-9\.]*)'' ([NS]) *([\-0-9\.]*)$")
-re_lon = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO])$")
+re_lon = re.compile(r"^ *(\d+)° *(\d+)' ([0-9\.]+)'' ([EO])")
 re_alti = re.compile(r" +([\-0-9\.]+)$")
 re_date= re.compile(r"^(\d\d)/(\d\d)/(\d\d\d\d)")
 
@@ -90,98 +97,40 @@ for l in f:
     state = 8
     repere = 0 # on repart sur le premier repère du tableau d['reperes']
 
-  elif state==20 and re_lon.match(l) is not None:
-    c = re_lon.match(l)
-    if c is not None:
-      lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
-      if c.group(4)=='O':
-        lon=-lon
-      d['reperes'][repere]['lon']=lon
-      repere = repere+1
-    elif l[:8]=='Latitude':
-      state = 21
-      repere = 0 # on repart sur le premier repère du tableau pour les latitude/alti
-  elif state==20 or state==21:
-    c = re_lat.match(l)
-    if c is not None:
-      lat=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
-      if c.group(4)=='S':
-        lat=-lat
-      if state==20:
-        state=21
-        repere = 0
-        for r in d['reperes']:
-          if 'lat' in r:
-            repere = repere+1
-      d['reperes'][repere]['lat']=lat
-      if c.group(5)!='':
-        d['reperes'][repere]['ele']=float(c.group(5))
-      if repere==len(d['reperes'])-1: # terminé, on retourne
-        state = 10
-      else:
-        repere = repere+1
-
-
   elif state==8:
-    c = re_lonlatele.match(l)
+    c = re_lonlat.match(l)
     if c is not None:
       lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
       if c.group(4)=='O':
         lon=-lon
+      cur = addxyz('lon',lon,d['reperes'])
       lat=int(c.group(5))+int(c.group(6))/60+float(c.group(7))/3600
       if c.group(8)=='S':
         lat=-lat
-      d['reperes'][repere]['lon']=lon
-      d['reperes'][repere]['lat']=lat
+      d['reperes'][cur]['lat']=lat
       if c.group(9)!='':
-        d['reperes'][repere]['ele']=float(c.group(9))
-      repere = repere+1
+        d['reperes'][cur]['ele']=float(c.group(9))
     else:
-      c = re_lat.match(l)
-      if c is not None:
-        lat=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
-        if c.group(4)=='S':
-          lat=-lat
-        d['reperes'][repere]['lat']=lat
-        if c.group(5)!='':
-          d['reperes'][repere]['ele']=float(c.group(5))
-        if 'lon' in d['reperes'][repere]:
-          repere = repere+1
-      else:
+        c = re_lat.match(l)
+        if c is not None:
+          lat=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
+          if c.group(4)=='S':
+            lat=-lat
+          cur = addxyz('lat',lat,d['reperes'])
+          if c.group(5)!='':
+            d['reperes'][cur]['ele']=float(c.group(5))
+
         c = re_lon.match(l)
         if c is not None:
           lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
           if c.group(4)=='O':
             lon=-lon
-          if 'lon' in d['reperes'][repere]:
-            d['reperes'][repere+1]['lon']=lon
-            repere = repere+2
-            state = 20
-          else:
-            d['reperes'][repere]['lon']=lon
-            if 'lat' in d['reperes'][repere]:
-              repere = repere+1
-        else:
-          c = re_alti.match(l)
-          if c is not None:
-            try:
-                d['reperes'][repere]['ele']=float(c.group(1))
-            except:
-                if 'ele' not in d['reperes'][repere-1]:
-                    d['reperes'][repere-1]['ele']=float(c.group(1))
-                pass
-          else:
-            c = re_lonlat.match(l)
-            if c is not None:
-              lon=int(c.group(1))+int(c.group(2))/60+float(c.group(3))/3600
-              if c.group(4)=='O':
-                lon=-lon
-              lat=int(c.group(5))+int(c.group(6))/60+float(c.group(7))/3600
-              if c.group(8)=='S':
-                lat=-lat
-              d['reperes'][repere]['lon']=lon
-              d['reperes'][repere]['lat']=lat
-              repere = repere+1
+          addxyz('lon',lon,d['reperes'])
+
+        c = re_alti.match(l)
+        if c is not None:
+          addxyz('ele',float(c.group(1)),d['reperes'])
+
     if l=='' and 'lat' in d['reperes'][len(d['reperes'])-1] and 'lon' in d['reperes'][len(d['reperes'])-1]:
       state=10
       repere=0
